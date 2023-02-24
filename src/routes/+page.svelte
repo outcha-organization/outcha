@@ -1,13 +1,18 @@
+<script>
+  import logo from '$lib/images/logo.jpg';
+</script>
+
+<div id="logo">
+  <img alt="Logo OUT'CHA" src={logo} />
+</div>
+
 <style lang="sass">
-  @use 'variables' as *
-  @use 'mixins' as *
+  #logo
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
 
-  h1
-    color: $primary
-
-    +desktop
-      color: $secondary
+    img
+      max-width: 100%
 </style>
-
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
