@@ -1,6 +1,12 @@
 <style lang="sass">
+  @use 'variables' as *
+  @use 'mixins' as *
+
   h1
-    color: blue
+    color: $primary
+
+    +desktop
+      color: $secondary
 </style>
 
 <h1>Welcome to SvelteKit</h1>
