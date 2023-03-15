@@ -55,15 +55,6 @@
     +desktop
       text-align: left
 
-    .container
-      flex-grow: 1
-      margin: 0 auto
-      position: relative
-      width: auto
-
-      +desktop
-        max-width: 960px
-
   .title
     font-family: 'Anton', sans-serif
     font-weight: 400
