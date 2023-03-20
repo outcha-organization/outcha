@@ -7,7 +7,7 @@
   <meta name="description" content="Association qui a pour but de favoriser l'inclusion sociale, l'épanouissement, la réalisation de rêves et le partage par le sport." />
 </svelte:head>
 
-<div class="container">
+<div class="container-full">
   <div class="hero">
     <div class="hero-head"></div>
     <div class="hero-content">
@@ -24,7 +24,7 @@
 <style lang="sass">
   @use 'mixins' as *
 
-  .container
+  .container-full
     background: url("../lib/images/background.webp") no-repeat center center / cover
     height: 100vh
     display: flex
