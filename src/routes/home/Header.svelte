@@ -17,7 +17,7 @@
 </div>
 
 <style lang="sass">
-  @use '../mixins' as *
+  @use '../../lib/sass/mixins' as *
 
   .header
     background-color: #fff

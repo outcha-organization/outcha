@@ -1,6 +1,7 @@
 <script>
   import Header from "./Header.svelte";
   import Hero from "./Hero.svelte";
+  import Projects from "./Projects.svelte";
 </script>
 
 <svelte:head>
@@ -11,3 +12,4 @@
 
 <Header />
 <Hero />
+<Projects />

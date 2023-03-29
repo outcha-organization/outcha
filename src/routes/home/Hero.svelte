@@ -20,8 +20,8 @@
 </section>
 
 <style lang="sass">
-  @use '../variables' as *
-  @use '../mixins' as *
+  @use '../../lib/sass/variables' as *
+  @use '../../lib/sass/mixins' as *
 
   .hero
     position: relative
@@ -67,10 +67,10 @@
     margin: 0
 
   .subtitle
-    font-family: 'Allison', cursive
-    font-weight: 700
-    font-size: 110px
-    line-height: 90px
+    font-family: 'Great Sejagad', sans-serif
+    font-weight: 400
+    font-size: 120px
+    line-height: 70px
     color: $primary
     text-shadow: 1px 1px 6px #333
     margin: 0
