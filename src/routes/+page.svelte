@@ -22,7 +22,7 @@
 </div>
 
 <style lang="sass">
-  @use 'mixins' as *
+  @use '../lib/sass/mixins' as *
 
   .container-full
     background: url("../lib/images/background.webp") no-repeat center center / cover

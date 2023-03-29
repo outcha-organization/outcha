@@ -1,5 +1,5 @@
 <script>
-  import './global.sass'
+  import '../lib/sass/global.sass'
 </script>
 
 <slot />
