@@ -54,6 +54,7 @@
   .wrapper
     background-image: url("../../lib/images/bg-green-dots.jpg")
     background-size: cover
+    margin: 40px 0
 
   h1
     font-family: 'Anton', sans-serif
