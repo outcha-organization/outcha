@@ -1,7 +1,7 @@
 <script>
-  import sandrine from '$lib/images/home/sandrine.jpg';
-  import lapland from '$lib/images/home/lapland.jpg';
-  import grandToGrand from '$lib/images/home/grand-to-grand.jpg';
+  import sandrine from '$lib/images/home/projects/sandrine.jpg';
+  import lapland from '$lib/images/home/projects/lapland.jpg';
+  import grandToGrand from '$lib/images/home/projects/grand-to-grand.jpg';
 </script>
 
 <section class="wrapper">
