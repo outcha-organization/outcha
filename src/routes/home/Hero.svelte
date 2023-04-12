@@ -1,5 +1,6 @@
 <script>
   import video from '$lib/videos/home-yukon.mp4';
+  import Icon from '@iconify/svelte';
 </script>
 
 <section class="hero">
@@ -14,7 +15,7 @@
       <p class="subtitle">Outdoor</p>
       <p class="title">Challenges</p>
       <p class="tagline">Épanouissement, réalisation de rêves et partage par le sport</p>
-      <p><a href="https://youtu.be/yLOG3ipbeNg" class="button" target="_blank">Découvrir l'association</a></p>
+      <p><a href="https://youtu.be/yLOG3ipbeNg" class="button" target="_blank">Découvrir l'association <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span></a></p>
     </div>
   </div>
 </section>
@@ -91,6 +92,11 @@
     text-decoration: none
     text-transform: uppercase
     text-shadow: 0 0 3px #666
+
+    .icon
+      position: relative
+      bottom: -2px
+      right: -2px
 
     &:hover
       background-color: #d9441c
