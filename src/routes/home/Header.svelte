@@ -111,7 +111,8 @@
 
       +tablet
         font-weight: normal
-        padding: 10px 0
+        padding: 0
+        border-bottom: 2px solid transparent
 
         &:hover
           border-bottom: 2px solid #ff1130
