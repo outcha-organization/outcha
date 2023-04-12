@@ -1,4 +1,6 @@
 <script>
+  import { fade } from 'svelte/transition';
+
   import logo from '$lib/images/logo.webp';
   import Icon from '@iconify/svelte';
 
@@ -30,7 +32,7 @@
 </div>
 
 {#if showNav}
-  <div class="backdrop" on:click={toggleNav}></div>
+  <div class="backdrop" on:click={toggleNav} transition:fade="{{ duration: 200 }}"></div>
 {/if}
 
 <style lang="sass">
