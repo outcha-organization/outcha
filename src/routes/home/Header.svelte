@@ -1,25 +1,32 @@
 <script>
   import logo from '$lib/images/logo.jpg';
+  import Icon from '@iconify/svelte';
 </script>
 
-<div class="header">
-  <h1 class="logo">
+<div id="header">
+  <h1 id="logo">
     <a href="/"><img src={logo} alt="Logo" /></a>
   </h1>
 
-  <ul class="nav">
+  <ul id="nav">
     <li><a href="/">Accueil</a></li>
     <li><a href="/about">L'association</a></li>
     <li><a href="/projects">Les projets</a></li>
     <li><a href="/team">La Team</a></li>
     <li><a href="/contact">Contact</a></li>
   </ul>
+
+  <div id="nav-toggler">
+    <button>
+      <Icon icon="icon-park-outline:hamburger-button" />
+    </button>
+  </div>
 </div>
 
 <style lang="sass">
   @use '../../lib/sass/mixins' as *
 
-  .header
+  #header
     background-color: #fff
     display: flex
     align-items: center
@@ -33,7 +40,7 @@
     +desktop
       padding: 25px 45px 10px 45px
 
-  .logo
+  #logo
     margin: 0
 
     img
@@ -45,7 +52,7 @@
       +desktop
         height: 70px
 
-  .nav
+  #nav
     list-style: none
     margin: 0
     padding: 0
@@ -76,4 +83,36 @@
       &.router-link-active
         border-bottom: 2px solid #ff1130
         color: #ff1130
+
+  #nav-toggler
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 82px
+    padding: 0 20px
+
+    button
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0
+      color: #000
+      font-size: 32px
+      background-color: transparent
+      border: 0
+      border-radius: 4px
+      height: 45px
+      width: 45px
+      text-align: center
+      cursor: pointer
+
+      &:hover
+        background-color: #fafafa
+
+    +tablet
+      display: none
 </style>
