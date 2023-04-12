@@ -1,5 +1,5 @@
 <script>
-  import logo from '$lib/images/logo.jpg';
+  import logo from '$lib/images/logo.webp';
   import Icon from '@iconify/svelte';
 </script>
 
@@ -30,27 +30,34 @@
     background-color: #fff
     display: flex
     align-items: center
-    padding: 15px 0 5px 0
     justify-content: center
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    height: 70px
+    z-index: 2
 
     +tablet
-      padding: 25px 4% 10px 4%
+      position: static
+      padding: 0 4%
+      height: 90px
       justify-content: space-between
 
     +desktop
-      padding: 25px 45px 10px 45px
+      height: 100px
 
   #logo
     margin: 0
 
     img
-      height: 55px
+      height: 75px
 
       +tablet
-        height: 55px
+        height: 75px
 
       +desktop
-        height: 70px
+        height: 90px
 
   #nav
     list-style: none
@@ -92,7 +99,7 @@
     top: 0
     left: 0
     right: 0
-    height: 82px
+    height: 70px
     padding: 0 20px
 
     button
