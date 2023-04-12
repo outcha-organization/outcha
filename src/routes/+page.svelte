@@ -5,6 +5,10 @@
 <svelte:head>
   <title>OUT'CHA - Sport for all</title>
   <meta name="description" content="Association qui a pour but de favoriser l'inclusion sociale, l'épanouissement, la réalisation de rêves et le partage par le sport." />
+
+  <style>
+    body { margin: 0 !important; }
+  </style>
 </svelte:head>
 
 <div class="container-full">
