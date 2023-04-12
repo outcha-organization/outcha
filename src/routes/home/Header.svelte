@@ -29,6 +29,10 @@
   </div>
 </div>
 
+{#if showNav}
+  <div class="backdrop" on:click={toggleNav}></div>
+{/if}
+
 <style lang="sass">
   @use '../../lib/sass/mixins' as *
 
@@ -39,7 +43,7 @@
     left: 0
     right: 0
     height: 70px
-    z-index: 2
+    z-index: 3
 
     +tablet
       position: static
@@ -57,7 +61,7 @@
     display: flex
     justify-content: center
     position: relative
-    z-index: 2
+    z-index: 3
 
     img
       height: 70px
@@ -126,7 +130,7 @@
     top: 0
     right: 0
     padding: 12px 20px 13px 20px
-    z-index: 2
+    z-index: 3
 
     button
       display: flex
@@ -145,6 +149,19 @@
 
       &:hover
         background-color: #fafafa
+
+    +tablet
+      display: none
+
+  .backdrop
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 2
+    width: 100vw
+    height: 100vh
+    background-color: #000
+    opacity: 0.5
 
     +tablet
       display: none
