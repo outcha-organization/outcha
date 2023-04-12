@@ -11,10 +11,10 @@
 
   <div class="hero-content">
     <div class="container">
-      <p class="subtitle">Yukon</p>
-      <p class="title">Arctic Ultra</p>
-      <p class="tagline">La course d'ultra la plus froide et la plus difficile au monde</p>
-      <p><a href="https://youtu.be/yLOG3ipbeNg" class="button" target="_blank">Voir le teaser</a></p>
+      <p class="subtitle">Outdoor</p>
+      <p class="title">Challenges</p>
+      <p class="tagline">Épanouissement, réalisation de rêves et partage par le sport</p>
+      <p><a href="https://youtu.be/yLOG3ipbeNg" class="button" target="_blank">Découvrir l'association</a></p>
     </div>
   </div>
 </section>
