@@ -98,7 +98,7 @@
       transform: translateY(0)
 
     li
-      padding: 0 10px
+      padding: 2px 10px
       font-size: 16px
       letter-spacing: -1px
 
