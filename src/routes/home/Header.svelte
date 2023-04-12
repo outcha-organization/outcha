@@ -1,6 +1,12 @@
 <script>
   import logo from '$lib/images/logo.webp';
   import Icon from '@iconify/svelte';
+
+  let showNav = false;
+
+  function toggleNav() {
+    showNav = !showNav;
+  }
 </script>
 
 <div id="header">
@@ -8,7 +14,7 @@
     <a href="/"><img src={logo} alt="Logo" /></a>
   </h1>
 
-  <ul id="nav">
+  <ul id="nav" class:visible={showNav}>
     <li><a href="/">Accueil</a></li>
     <li><a href="/about">L'association</a></li>
     <li><a href="/projects">Les projets</a></li>
@@ -17,7 +23,7 @@
   </ul>
 
   <div id="nav-toggler">
-    <button>
+    <button on:click={toggleNav}>
       <Icon icon="icon-park-outline:hamburger-button" />
     </button>
   </div>
@@ -28,9 +34,6 @@
 
   #header
     background-color: #fff
-    display: flex
-    align-items: center
-    justify-content: center
     position: fixed
     top: 0
     left: 0
@@ -41,17 +44,24 @@
     +tablet
       position: static
       padding: 0 4%
-      height: 90px
+      display: flex
+      flex-direction: row
       justify-content: space-between
+      height: 90px
 
     +desktop
       height: 100px
 
   #logo
     margin: 0
+    display: flex
+    justify-content: center
+    position: relative
+    z-index: 2
 
     img
-      height: 75px
+      height: 70px
+      display: block
 
       +tablet
         height: 75px
@@ -62,45 +72,60 @@
   #nav
     list-style: none
     margin: 0
-    padding: 0
-    display: none
+    padding: 20px 0
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    position: relative
+    top: 0
+    transform: translateY(-100%)
+    transition: transform 0.3s ease-in-out
 
     +tablet
-      display: flex
+      position: static
+      padding: 0
+      flex-direction: row
+      transform: translateY(0)
+
+    &.visible
+      transform: translateY(0)
 
     li
-      padding: 0 10px 10px 10px
+      padding: 0 10px
       font-size: 16px
       letter-spacing: -1px
 
       +desktop
         font-size: 18px
-        padding: 0 12px 12px 12px
+        padding: 0 12px
 
     a
       text-decoration: none
       color: #333
       text-transform: uppercase
       line-height: 40px
-      padding: 10px 0
+      display: block
+      padding: 10px 30px
+      font-weight: 600
 
-      &:hover
-        border-bottom: 2px solid #ff1130
+      +tablet
+        font-weight: normal
+        padding: 10px 0
 
-      &.router-link-active
-        border-bottom: 2px solid #ff1130
-        color: #ff1130
+        &:hover
+          border-bottom: 2px solid #ff1130
+
+        &.router-link-active
+          border-bottom: 2px solid #ff1130
+          color: #ff1130
 
   #nav-toggler
-    display: flex
-    justify-content: flex-end
-    align-items: center
     position: absolute
     top: 0
-    left: 0
     right: 0
-    height: 70px
-    padding: 0 20px
+    padding: 12px 20px 13px 20px
+    z-index: 2
 
     button
       display: flex
