@@ -15,7 +15,7 @@
         </div>
         <div class="card-content">
           <h2 class="title">Sandrine</h2>
-          <h3 class="subtitle">Courir Sierre-Zinal avec une aveugle</h3>
+          <h3 class="subtitle">Courir Sierre-Zinal en étant aveugle</h3>
         </div>
       </a>
 
