@@ -60,22 +60,30 @@
     font-family: 'Anton', sans-serif
     font-weight: 400
     color: #fff
-    font-size: 85px
-    line-height: 85px
+    font-size: 72px
+    line-height: 72px
     letter-spacing: -1px
     text-transform: uppercase
     text-shadow: 2px 2px 6px #333
     margin: 0
 
+    +tablet
+      font-size: 85px
+      line-height: 85px
+
   .subtitle
     font-family: 'Great Sejagad', sans-serif
     font-weight: 400
-    font-size: 120px
-    line-height: 70px
+    font-size: 105px
+    line-height: 60px
     color: $primary
     text-shadow: 1px 1px 6px #333
     margin: 0
     position: relative
+
+    +tablet
+      font-size: 120px
+      line-height: 70px
 
   .tagline
     font-size: 26px
