@@ -50,6 +50,7 @@
 
 <style lang="sass">
   @use '../../lib/sass/variables' as *
+  @use '../../lib/sass/mixins' as *
 
   .wrapper
     background-image: url("../../lib/images/bg-green-dots.jpg")
@@ -76,13 +77,19 @@
   .projects
     display: flex
     justify-content: space-between
-    column-gap: 30px
+    align-items: center
+    flex-direction: column
+    gap: 30px
+
+    +tablet
+      flex-direction: row
 
   .card
     width: 100%
     height: 320px
     overflow: hidden
     position: relative
+    max-width: 450px
 
     &:hover img
       transform: scale(1.1)
