@@ -1,5 +1,5 @@
 <script>
-  import Header from "./Header.svelte";
+  import Header from "../Header.svelte";
   import Hero from "./Hero.svelte";
   import Partners from "./Partners.svelte";
   import Projects from "./Projects.svelte";
