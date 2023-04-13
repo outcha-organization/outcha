@@ -13,11 +13,11 @@
 
 <div id="header">
   <h1 id="logo">
-    <a href="/static"><img src={logo} alt="Logo" /></a>
+    <a href="/"><img src={logo} alt="Logo" /></a>
   </h1>
 
   <ul id="nav" class:visible={showNav}>
-    <li><a href="/static">Accueil</a></li>
+    <li><a href="/">Accueil</a></li>
     <li><a href="/about">L'association</a></li>
     <li><a href="/projects">Les projets</a></li>
     <li><a href="/team">La Team</a></li>
