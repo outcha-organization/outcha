@@ -38,11 +38,11 @@
     flex-grow: 1
 
   .hero-head
-    background: url("../lib/images/border-bottom.webp") repeat-x bottom center
+    background: url("../lib/images/border-white-bottom.webp") repeat-x bottom center
     height: 50px
 
   .hero-foot
-    background: url("../lib/images/border-top.webp") repeat-x top center
+    background: url("../lib/images/border-white-top.webp") repeat-x top center
     height: 50px
 
   .hero-content
