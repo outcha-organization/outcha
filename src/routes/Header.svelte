@@ -1,5 +1,6 @@
 <script>
   import { fade } from 'svelte/transition';
+  import { page } from '$app/stores';
 
   import logo from '$lib/images/logo.webp';
   import Icon from '@iconify/svelte';
@@ -13,15 +14,15 @@
 
 <div id="header">
   <h1 id="logo">
-    <a href="/"><img src={logo} alt="Logo" /></a>
+    <a href="/home"><img src={logo} alt="Logo" /></a>
   </h1>
 
   <ul id="nav" class:visible={showNav}>
-    <li><a href="/">Accueil</a></li>
-    <li><a href="/about">L'association</a></li>
-    <li><a href="/projects">Les projets</a></li>
-    <li><a href="/team">La Team</a></li>
-    <li><a href="/contact">Contact</a></li>
+    <li><a href="/home" class:active={$page.url.pathname.includes('/home')}>Accueil</a></li>
+    <li><a href="/association" class:active={$page.url.pathname.includes('/association')}>L'association</a></li>
+    <li><a href="/projets" class:active={$page.url.pathname.includes('/projets')}>Les projets</a></li>
+    <li><a href="/team" class:active={$page.url.pathname.includes('/team')}>La Team</a></li>
+    <li><a href="/contact" class:active={$page.url.pathname.includes('/contact')}>Contact</a></li>
   </ul>
 
   <div id="nav-toggler">
@@ -121,11 +122,11 @@
         border-bottom: 2px solid transparent
 
         &:hover
-          border-bottom: 2px solid #ff1130
+          border-bottom-color: #a1a4ac
 
-        &.router-link-active
-          border-bottom: 2px solid #ff1130
-          color: #ff1130
+        &.active
+          border-bottom-color: #ff1130
+          font-weight: bold
 
   #nav-toggler
     position: absolute
