@@ -1,5 +1,6 @@
 <script>
   import Header from "../Header.svelte";
+  import Footer from "../Footer.svelte";
   import Hero from "./Hero.svelte";
   import Partners from "./Partners.svelte";
   import Projects from "./Projects.svelte";
@@ -15,3 +16,4 @@
 <Hero />
 <Partners />
 <Projects />
+<Footer />
