@@ -123,6 +123,7 @@
 <Footer />
 
 <style lang="sass">
+  @use '../../lib/sass/variables' as *
   @use '../../lib/sass/mixins' as *
 
   .wrapper
@@ -141,7 +142,7 @@
     transition: all 200ms ease
 
     &:hover
-      color: #e84f0c
+      color: $secondary
 
   .person
     display: flex
