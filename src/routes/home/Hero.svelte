@@ -90,22 +90,4 @@
     color: #fff
     margin: 10px 0 30px 0
     text-shadow: 0 0 3px #999
-
-  .button
-    font-size: 16px
-    font-weight: bold
-    padding: 15px 20px
-    background-color: $secondary
-    color: #fff
-    text-decoration: none
-    text-transform: uppercase
-    text-shadow: 0 0 3px #666
-
-    .icon
-      position: relative
-      bottom: -2px
-      right: -2px
-
-    &:hover
-      background-color: #d9441c
 </style>

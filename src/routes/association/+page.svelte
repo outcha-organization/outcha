@@ -87,26 +87,6 @@
   h3
     margin: 12px 0
 
-  .button
-    font-size: 16px
-    font-weight: bold
-    padding: 15px 20px
-    background-color: $secondary
-    color: #fff
-    text-decoration: none
-    text-transform: uppercase
-    text-shadow: 0 0 3px #666
-    display: inline-block
-    line-height: normal
-
-    .icon
-      position: relative
-      bottom: -2px
-      right: -2px
-
-    &:hover
-      background-color: #d9441c
-
   .about
     padding-bottom: 30px
 
