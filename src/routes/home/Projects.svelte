@@ -2,6 +2,7 @@
   import sandrine from '$lib/images/home/projects/sandrine.jpg';
   import lapland from '$lib/images/home/projects/lapland.jpg';
   import grandToGrand from '$lib/images/home/projects/grand-to-grand.jpg';
+  import Icon from "@iconify/svelte";
 </script>
 
 <section class="wrapper">
@@ -41,8 +42,9 @@
     </div>
 
     <div class="more">
-      <a href="/projects" class="button">
+      <a href="/projets" class="button">
         Voir tous les projets
+        <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
       </a>
     </div>
   </div>
@@ -141,6 +143,11 @@
     text-transform: uppercase
     text-shadow: 0 0 3px #666
     display: inline-block
+
+    .icon
+      position: relative
+      bottom: -2px
+      right: -2px
 
     &:hover
       background-color: #d9441c
