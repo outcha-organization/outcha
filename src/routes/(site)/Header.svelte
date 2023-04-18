@@ -37,7 +37,7 @@
 {/if}
 
 <style lang="sass">
-  @use '../lib/sass/mixins' as *
+  @use '../../lib/sass/mixins' as *
 
   #header
     background-color: #fff

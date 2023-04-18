@@ -123,8 +123,8 @@
 <Footer />
 
 <style lang="sass">
-  @use '../../lib/sass/variables' as *
-  @use '../../lib/sass/mixins' as *
+  @use '../../../lib/sass/variables' as *
+  @use '../../../lib/sass/mixins' as *
 
   .wrapper
     background-color: #fff

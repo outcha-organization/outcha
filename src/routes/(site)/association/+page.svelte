@@ -48,11 +48,11 @@
 <Footer />
 
 <style lang="sass">
-  @use '../../lib/sass/variables' as *
+  @use '../../../lib/sass/variables' as *
 
   .wrapper
     background-color: #fff
-    background-image: url("../../lib/images/bg-green-dots.jpg")
+    background-image: url("../../../lib/images/bg-green-dots.jpg")
     background-size: cover
     padding: 30px 0
     min-height: 350px

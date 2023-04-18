@@ -25,19 +25,19 @@
 </div>
 
 <style lang="sass">
-  @use '../lib/sass/mixins' as *
+  @use '../../lib/sass/mixins' as *
 
   .banner
     height: 260px
     display: flex
     justify-content: center
     align-items: center
-    background: url("../lib/images/border-white-bottom.webp") repeat-x center bottom
+    background: url("../../lib/images/border-white-bottom.webp") repeat-x center bottom
     position: relative
 
     &.small
       height: 100px
-      background-image: url("../lib/images/border-white-bottom-2.webp")
+      background-image: url("../../lib/images/border-white-bottom-2.webp")
       background-size: cover
 
       img

@@ -57,7 +57,7 @@
 </section>
 
 <style lang="sass">
-  @use '../../lib/sass/mixins' as *
+  @use '../../../lib/sass/mixins' as *
 
   .partners
     list-style: none
