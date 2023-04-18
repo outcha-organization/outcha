@@ -1,6 +1,4 @@
 <script>
-  import Header from "../Header.svelte";
-  import Footer from "../Footer.svelte";
   import Hero from "./Hero.svelte";
   import Partners from "./Partners.svelte";
   import Projects from "./Projects.svelte";
@@ -12,8 +10,6 @@
         content="Association qui a pour but de favoriser l'inclusion sociale et la réalisation de rêves par le sport." />
 </svelte:head>
 
-<Header />
 <Hero />
 <Partners />
 <Projects />
-<Footer />

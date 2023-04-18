@@ -1,11 +1,8 @@
 <script>
-  import Header from "../Header.svelte";
   import Banner from "../Banner.svelte";
-  import Footer from "../Footer.svelte";
-
+  import banner from '$lib/images/team/banner.webp';
   import Icon from '@iconify/svelte';
 
-  import banner from '$lib/images/team/banner.webp';
   import patrick from '$lib/images/team/Patrick Sumi.webp';
   import victor from '$lib/images/team/Victor Hugo Docarmo.webp';
   import herve from '$lib/images/team/Hervé Acosta.webp';
@@ -17,7 +14,6 @@
         content="Association qui a pour but de favoriser l'inclusion sociale et la réalisation de rêves par le sport." />
 </svelte:head>
 
-<Header />
 <Banner title="La Team" image={banner} />
 
 <div class="wrapper">
@@ -119,8 +115,6 @@
     </section>
   </div>
 </div>
-
-<Footer />
 
 <style lang="sass">
   @use '../../../lib/sass/variables' as *

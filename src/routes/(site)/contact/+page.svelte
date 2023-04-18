@@ -1,8 +1,5 @@
 <script>
-  import Header from "../Header.svelte";
   import Banner from "../Banner.svelte";
-  import Footer from "../Footer.svelte";
-
   import banner from '$lib/images/contact/banner.webp';
 </script>
 
@@ -12,7 +9,6 @@
         content="Association qui a pour but de favoriser l'inclusion sociale et la réalisation de rêves par le sport." />
 </svelte:head>
 
-<Header />
 <Banner title="Contact" image={banner} />
 
 <div class="wrapper">
@@ -26,8 +22,6 @@
     </p>
   </div>
 </div>
-
-<Footer />
 
 <style lang="sass">
   .wrapper

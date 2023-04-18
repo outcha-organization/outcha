@@ -1,8 +1,5 @@
 <script>
-  import Header from "../Header.svelte";
   import Banner from "../Banner.svelte";
-  import Footer from "../Footer.svelte";
-
   import banner from '$lib/images/association/banner.webp';
   import Icon from '@iconify/svelte';
 </script>
@@ -13,7 +10,6 @@
         content="Association qui a pour but de favoriser l'inclusion sociale et la réalisation de rêves par le sport." />
 </svelte:head>
 
-<Header />
 <Banner title="L'association" image={banner} />
 
 <div class="wrapper">
@@ -44,8 +40,6 @@
     </div>
   </section>
 </div>
-
-<Footer />
 
 <style lang="sass">
   @use '../../../lib/sass/variables' as *
