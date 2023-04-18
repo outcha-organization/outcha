@@ -14,12 +14,14 @@
   });
 </script>
 
-<div class="banner">
+<div class="banner" class:small={!title}>
   <div class="banner-img">
     <img src={image} alt={title} />
   </div>
 
-  <h1 class="title">{title}</h1>
+  {#if title}
+    <h1 class="title">{title}</h1>
+  {/if}
 </div>
 
 <style lang="sass">
@@ -32,6 +34,11 @@
     align-items: center
     background: url("../lib/images/border-white-bottom.webp") repeat-x center bottom
     position: relative
+
+    &.small
+      height: 100px
+      background-image: url("../lib/images/border-white-bottom-2.webp")
+      background-size: cover
 
     +tablet
       height: 300px
