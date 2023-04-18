@@ -1,7 +1,7 @@
 <script>
-  import sandrine from '$lib/images/home/projects/sandrine.jpg';
-  import lapland from '$lib/images/home/projects/lapland.jpg';
-  import grandToGrand from '$lib/images/home/projects/grand-to-grand.jpg';
+  import sandrine from '$lib/images/home/projects/sandrine.webp';
+  import lapland from '$lib/images/home/projects/lapland.webp';
+  import grandToGrand from '$lib/images/home/projects/grand-to-grand.webp';
   import Icon from "@iconify/svelte";
 </script>
 
