@@ -1,21 +1,38 @@
 <script>
-  import Header from "../../Header.svelte";
-  import Footer from "../../Footer.svelte";
   import Banner from "../../Banner.svelte";
-
   import banner from '$lib/images/projets/bg-dark.webp';
+
+  import { onMount } from "svelte";
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
+  import Icon from "@iconify/svelte";
+
   import photo1 from '$lib/images/projets/north-cape/photo1.webp';
   import photo2 from '$lib/images/projets/north-cape/photo2.webp';
   import photo3 from '$lib/images/projets/north-cape/photo3.webp';
   import photo4 from '$lib/images/projets/north-cape/photo4.webp';
-  import Icon from "@iconify/svelte";
+
+  const images = [
+    { image: photo1, width: 960, height: 720 },
+    { image: photo2, width: 1600, height: 1200 },
+    { image: photo3, width: 1230, height: 2048 },
+    { image: photo4, width: 1600, height: 1200 }
+  ]
+
+  onMount(() => {
+    let lightbox = new PhotoSwipeLightbox({
+      gallery: '#gallery',
+      children: 'a',
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  })
 </script>
 
 <svelte:head>
   <title>OUT'CHA - North Cape</title>
 </svelte:head>
 
-<Header />
 <Banner image={banner} />
 
 <div class="wrapper">
@@ -60,17 +77,20 @@
 
     <div class="sidebar">
       <h2>Galerie</h2>
-      <div class="gallery">
-        <img src="{photo1}" alt="Photo 1">
-        <img src="{photo2}" alt="Photo 2">
-        <img src="{photo3}" alt="Photo 3">
-        <img src="{photo4}" alt="Photo 4">
+      <div id="gallery">
+        {#each images as image, i}
+          <a
+            href={image.image}
+            data-pswp-width={image.width}
+            data-pswp-height={image.height}
+          >
+            <img src={image.image} alt="Photo {i + 1}" />
+          </a>
+        {/each}
       </div>
     </div>
   </div>
 </div>
-
-<Footer />
 
 <style lang="sass">
   @use '../../../../lib/sass/variables' as *
@@ -100,7 +120,7 @@
     +desktop
       width: 800px
 
-    .gallery
+    #gallery
       display: grid
       grid-template-columns: 1fr 1fr 1fr
       gap: 15px
