@@ -26,10 +26,10 @@
 </div>
 
 <style lang="sass">
-  @use '../lib/sass/mixins' as *
+  @use '../../lib/sass/mixins' as *
 
   .container-full
-    background: url("../lib/images/background.webp") no-repeat center center / cover
+    background: url("../../lib/images/background.webp") no-repeat center center / cover
     height: 100vh
     display: flex
     align-items: center
@@ -38,11 +38,11 @@
     flex-grow: 1
 
   .hero-head
-    background: url("../lib/images/border-white-bottom.webp") repeat-x bottom center
+    background: url("../../lib/images/border-white-bottom.webp") repeat-x bottom center
     height: 50px
 
   .hero-foot
-    background: url("../lib/images/border-white-top.webp") repeat-x top center
+    background: url("../../lib/images/border-white-top.webp") repeat-x top center
     height: 50px
 
   .hero-content

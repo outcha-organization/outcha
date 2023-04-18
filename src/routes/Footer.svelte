@@ -54,7 +54,7 @@
     height: 80px
 
   #footer
-    background-color: #171c34
+    background-color: $tertiary
     padding: 40px 0
     color: #a1a4ac
 

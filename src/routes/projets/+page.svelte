@@ -194,7 +194,7 @@
     flex-direction: column
     align-items: stretch
     gap: 30px
-    border-bottom: solid 1px #e5e5e5
+    border-bottom: solid 1px $grey
     padding: 30px 0
 
     +tablet
@@ -245,6 +245,10 @@
         a
           color: $secondary
           text-decoration: none
+          transition: color 200ms ease
+
+          &:hover
+            color: $secondary-dark
 
       h3
         font-size: 22px
