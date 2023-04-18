@@ -40,6 +40,9 @@
       background-image: url("../lib/images/border-white-bottom-2.webp")
       background-size: cover
 
+      img
+        height: 120% !important
+
     +tablet
       height: 300px
 
