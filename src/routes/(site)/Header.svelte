@@ -18,11 +18,11 @@
   </h1>
 
   <ul id="nav" class:visible={showNav}>
-    <li><a href="/home" class:active={$page.url.pathname.includes('/home')}>Accueil</a></li>
-    <li><a href="/association" class:active={$page.url.pathname.includes('/association')}>L'association</a></li>
-    <li><a href="/projets" class:active={$page.url.pathname.includes('/projets')}>Les projets</a></li>
-    <li><a href="/team" class:active={$page.url.pathname.includes('/team')}>La Team</a></li>
-    <li><a href="/contact" class:active={$page.url.pathname.includes('/contact')}>Contact</a></li>
+    <li><a href="/home" on:click={toggleNav} class:active={$page.url.pathname.includes('/home')}>Accueil</a></li>
+    <li><a href="/association" on:click={toggleNav} class:active={$page.url.pathname.includes('/association')}>L'association</a></li>
+    <li><a href="/projets" on:click={toggleNav} class:active={$page.url.pathname.includes('/projets')}>Les projets</a></li>
+    <li><a href="/team" on:click={toggleNav} class:active={$page.url.pathname.includes('/team')}>La Team</a></li>
+    <li><a href="/contact" on:click={toggleNav} class:active={$page.url.pathname.includes('/contact')}>Contact</a></li>
   </ul>
 
   <div id="nav-toggler">
