@@ -18,11 +18,11 @@
 
 <div id="header">
   <h1 id="logo">
-    <a href="/home" on:click={closeNav}><img src={logo} alt="Logo" /></a>
+    <a href="/new" on:click={closeNav}><img src={logo} alt="Logo" /></a>
   </h1>
 
   <ul id="nav" class:visible={showNav}>
-    <li><a href="/home" on:click={closeNav} class:active={$page.url.pathname.includes('/home')}>Accueil</a></li>
+    <li><a href="/new" on:click={closeNav} class:active={$page.url.pathname === '/new'}>Accueil</a></li>
     <li><a href="/association" on:click={closeNav} class:active={$page.url.pathname.includes('/association')}>L'association</a></li>
     <li><a href="/projets" on:click={closeNav} class:active={$page.url.pathname.includes('/projets')}>Les projets</a></li>
     <li><a href="/team" on:click={closeNav} class:active={$page.url.pathname.includes('/team')}>La Team</a></li>
