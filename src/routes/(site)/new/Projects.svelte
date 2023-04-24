@@ -7,7 +7,7 @@
 
 <section class="wrapper">
   <div class="container">
-    <h1><em>Derniers</em> projets</h1>
+    <h1><em>Projets</em> OUT'CHA</h1>
 
     <div class="projects">
       <a href="/projects" class="card">
