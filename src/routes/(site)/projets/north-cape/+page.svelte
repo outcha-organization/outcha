@@ -46,13 +46,13 @@
       </nav>
 
       <div class="location">Norvège</div>
-      <h1><a href="/projets/north-cape">North Cape</a></h1>
+      <h1>North Cape</h1>
       <h3>5500 kilomètre à vélo jusqu'en Norvège</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
         odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
         repudiandae suscipit?</p>
       <div class="cover">
-        <img src={photo2} alt="North Cape" />
+        <img src={photo1} alt="North Cape" />
       </div>
       <article>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
