@@ -1,11 +1,9 @@
 <script>
-  import Banner from "../../Banner.svelte";
-  import banner from '$lib/images/projets/bg-dark.webp';
+  import Banner from '../../Banner.svelte';
+  import Gallery from '../Gallery.svelte';
 
-  import { onMount } from "svelte";
-  import PhotoSwipeLightbox from 'photoswipe/lightbox';
-  import 'photoswipe/style.css';
-  import Icon from "@iconify/svelte";
+  import banner from '$lib/images/projets/bg-dark.webp';
+  import Icon from '@iconify/svelte';
 
   import photo1 from '$lib/images/projets/north-cape/photo1.webp';
   import photo2 from '$lib/images/projets/north-cape/photo2.webp';
@@ -18,15 +16,6 @@
     { image: photo3, width: 1230, height: 2048 },
     { image: photo4, width: 1600, height: 1200 }
   ]
-
-  onMount(() => {
-    let lightbox = new PhotoSwipeLightbox({
-      gallery: '#gallery',
-      children: 'a',
-      pswpModule: () => import('photoswipe'),
-    });
-    lightbox.init();
-  })
 </script>
 
 <svelte:head>
@@ -76,18 +65,7 @@
     </div>
 
     <div class="sidebar">
-      <h2>Galerie</h2>
-      <div id="gallery">
-        {#each images as image, i}
-          <a
-            href={image.image}
-            data-pswp-width={image.width}
-            data-pswp-height={image.height}
-          >
-            <img src={image.image} alt="Photo {i + 1}" />
-          </a>
-        {/each}
-      </div>
+      <Gallery images={images} />
     </div>
   </div>
 </div>
@@ -119,19 +97,6 @@
 
     +desktop
       width: 800px
-
-    #gallery
-      display: grid
-      grid-template-columns: 1fr 1fr 1fr
-      gap: 15px
-      margin-bottom: 20px
-
-      +tablet
-        grid-template-columns: 1fr 1fr
-
-      img
-        max-width: 100%
-        display: block
 
   .location
     font-size: 24px
