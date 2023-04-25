@@ -54,4 +54,12 @@
     img
       max-width: 100%
       display: block
+      overflow: hidden
+      object-fit: cover
+      width: 232px
+      height: 174px
+
+      +tablet
+        width: 137px
+        height: 103px
 </style>
