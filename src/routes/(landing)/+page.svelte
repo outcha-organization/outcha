@@ -5,15 +5,6 @@
 <svelte:head>
   <title>OUT'CHA - Sport for all</title>
   <meta name="description" content="Association qui a pour but de favoriser l'inclusion sociale, l'épanouissement, la réalisation de rêves et le partage par le sport." />
-
-  <style>
-    body {
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-      margin: 0;
-    }
-  </style>
 </svelte:head>
 
 <div class="container-full">
@@ -31,7 +22,13 @@
 </div>
 
 <style lang="sass">
-  @use '../../lib/sass/mixins' as *
+  @use '$lib/sass/utilities/mixins' as *
+
+  :global(body)
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    margin: 0
 
   .container-full
     background: url("../../lib/images/background.webp") no-repeat center center / cover

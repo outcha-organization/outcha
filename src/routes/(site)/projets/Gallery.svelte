@@ -32,7 +32,7 @@
 </div>
 
 <style lang="sass">
-  @use '../../../lib/sass/mixins' as *
+  @use '$lib/sass/utilities/mixins' as *
 
   h2
     font-family: 'Anton', sans-serif

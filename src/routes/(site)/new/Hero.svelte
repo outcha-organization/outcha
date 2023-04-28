@@ -21,8 +21,8 @@
 </section>
 
 <style lang="sass">
-  @use '../../../lib/sass/variables' as *
-  @use '../../../lib/sass/mixins' as *
+  @use '$lib/sass/utilities/variables' as *
+  @use '$lib/sass/utilities/mixins' as *
 
   .hero
     position: relative

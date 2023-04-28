@@ -1,11 +1,9 @@
-@use 'variables' as *
+@use '../utilities/variables' as *
 
 .breadcrumb
   ul
     display: flex
-    margin: 0 0 30px 0
-    padding: 0
-    list-style: none
+    margin-bottom: 30px
 
   li
     &:first-child a
@@ -15,16 +13,16 @@
       a
         color: $grey-dark
         cursor: default
-        text-decoration: none
+        pointer-events: none
 
     & + li::before
       color: $grey
       content: "\0002f"
 
   a
+    color: $tertiary
     padding: 0 10px
     text-decoration: none
-    color: $tertiary
     transition: color 200ms ease
 
     &:hover

@@ -42,7 +42,7 @@
 </div>
 
 <style lang="sass">
-  @use '../../../lib/sass/variables' as *
+  @use '$lib/sass/utilities/variables' as *
 
   .wrapper
     background-color: #fff
