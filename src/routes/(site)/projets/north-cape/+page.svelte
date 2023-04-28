@@ -1,9 +1,6 @@
 <script>
-  import Banner from '../../Banner.svelte';
+  import Project from '../Project.svelte';
   import Gallery from '../Gallery.svelte';
-
-  import banner from '$lib/images/projets/bg-dark.webp';
-  import Icon from '@iconify/svelte';
 
   import cover from '$lib/images/projets/north-cape/cover.webp';
   import photo1 from '$lib/images/projets/north-cape/photo1.webp';
@@ -29,142 +26,68 @@
   <title>OUT'CHA - North Cape</title>
 </svelte:head>
 
-<Banner image={banner} />
+<Project name="North Cape">
+  <div slot="content">
+    <h3 class="m-0">Norvège</h3>
+    <h1>North Cape</h1>
+    <h2>5500 kilomètre à vélo jusqu'en Norvège</h2>
 
-<div class="wrapper">
-  <div class="container">
-    <div class="content">
-      <nav class="breadcrumb">
-        <ul>
-          <li><a href="/projets">Projets</a></li>
-          <li class="is-active"><a href="/projets/north-cape">North Cape</a></li>
-        </ul>
-      </nav>
-
-      <div class="location">Norvège</div>
-      <h1>North Cape</h1>
-      <h2>5500 kilomètre à vélo jusqu'en Norvège</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
-        odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
-        repudiandae suscipit?</p>
-      <div class="my-4">
-        <img src={cover} alt="North Cape" />
-      </div>
-
-      <section class="is-clearfix mb-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
-          odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
-          repudiandae suscipit?</p>
-        <h3>Lorem Ipsum</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
-          odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
-          repudiandae suscipit?</p>
-        <img src={photo3} alt="North Cape" class="is-pulled-left mr-4" width="200" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
-          dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
-          voluptatibus?</p>
-        <h4>Dolor sit amet</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
-          dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
-          voluptatibus?</p>
-      </section>
-
-      <section class="is-clearfix mb-4">
-        <h3>Alias architecto at corporis</h3>
-        <img src={photo6} alt="North Cape" class="is-pulled-right ml-4" width="250" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
-          dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
-          voluptatibus?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
-          dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
-          voluptatibus?</p>
-      </section>
-
-      <p class="more">
-        <a href="/projets">
-          Voir les autres projets
-          <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-        </a>
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi autem consequuntur cum, cupiditate
+        delectus eius ex facere facilis fugit necessitatibus nesciunt quam, quos sapiente tempora tempore ullam. Minima,
+        quasi!
       </p>
-    </div>
 
-    <div class="sidebar">
-      <Gallery images={images} />
-    </div>
+      <p><img src={cover} alt="North Cape" /></p>
+    </section>
+
+    <section class="is-clearfix mb-4">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis dolorem, enim impedit modi nam officia quam
+        quisquam tempora temporibus. Ab accusamus corporis distinctio eveniet impedit libero maiores nam rerum.
+      </p>
+
+      <h3>Lorem Ipsum</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae odio
+        quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
+        repudiandae suscipit?
+      </p>
+
+      <p><img src={photo3} alt="North Cape" class="is-pulled-left mr-4" width="200" /></p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
+        dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
+        voluptatibus?
+      </p>
+
+      <h4>Dolor sit amet</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
+        dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
+        voluptatibus?
+      </p>
+    </section>
+
+    <section class="is-clearfix mb-4">
+      <h3>Alias architecto at corporis</h3>
+      <p><img src={photo6} alt="North Cape" class="is-pulled-right ml-4" width="250" /></p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
+        dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
+        voluptatibus?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
+        dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
+        voluptatibus?
+      </p>
+    </section>
   </div>
-</div>
 
-<style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
-  .wrapper
-    background-color: #fff
-    padding: 30px 0
-    min-height: 350px
-
-  .container
-    display: flex
-    flex-direction: column
-    gap: 30px
-
-    +tablet
-      flex-direction: row
-
-    +desktop
-      gap: 50px
-
-  .sidebar
-    +tablet
-      width: 700px
-      padding-top: 60px
-
-    +desktop
-      width: 800px
-
-  .location
-    font-size: 24px
-
-  h1
-    font-family: 'Anton', sans-serif
-    text-transform: uppercase
-    font-size: 64px
-    line-height: 90px
-
-  h2
-    font-size: 24px
-    margin: 0 0 15px 0
-
-  h3
-    font-size: 18px
-    margin: 0 0 15px 0
-
-  h4
-    font-size: 16px
-    margin: 0 0 15px 0
-
-  p
-    margin: 15px 0
-    line-height: 28px
-    color: #333
-
-  .more
-    border-top: solid 1px $grey
-    margin-top: 40px
-    padding-top: 20px
-    text-align: right
-
-    a
-      color: $tertiary
-      text-decoration: none
-      font-size: 18px
-      font-weight: 600
-      transition: all 200ms ease
-
-      &:hover
-        color: $secondary
-        text-decoration: underline
-
-      .icon
-        font-size: 12px
-</style>
+  <div slot="sidebar">
+    <Gallery images={images} />
+  </div>
+</Project>
