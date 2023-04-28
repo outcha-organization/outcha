@@ -249,9 +249,9 @@
 
       p
         line-height: 24px
+        margin: 1rem 0
 
       a
-
         &.more
           color: $secondary
           text-decoration: none

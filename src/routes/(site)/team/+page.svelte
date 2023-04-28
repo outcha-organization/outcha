@@ -162,6 +162,7 @@
 
       img
         width: 350px
+        max-width: initial
 
     .bio
       h3

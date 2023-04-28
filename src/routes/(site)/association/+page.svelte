@@ -80,6 +80,8 @@
 
   h3
     margin: 12px 0
+    font-size: 18px
+    font-weight: 700
 
   .about
     padding-bottom: 30px

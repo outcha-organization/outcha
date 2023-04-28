@@ -10,7 +10,7 @@
     <div class="content">
       <div class="content-left">
         <div id="logo">
-          <a href="/static"><img src={logo} alt="Logo" /></a>
+          <a href="/new"><img src={logo} alt="Logo" /></a>
         </div>
 
         <p>Association basée à Lausanne (Suisse)</p>
@@ -68,6 +68,9 @@
     +tablet
       flex-direction: row
       text-align: left
+
+  p
+    margin: 1rem 0
 
   a
     color: #fff
