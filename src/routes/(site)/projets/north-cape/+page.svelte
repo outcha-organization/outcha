@@ -47,11 +47,11 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
         odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
         repudiandae suscipit?</p>
-      <div class="cover">
+      <div class="my-4">
         <img src={cover} alt="North Cape" />
       </div>
 
-      <section>
+      <section class="is-clearfix mb-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
           odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
           repudiandae suscipit?</p>
@@ -59,7 +59,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dolorum exercitationem molestiae
           odio quisquam reprehenderit! A ad debitis eaque fugit harum illo laborum modi molestias officia praesentium,
           repudiandae suscipit?</p>
-        <img src={photo3} alt="North Cape" class="is-pulled-left" />
+        <img src={photo3} alt="North Cape" class="is-pulled-left mr-4" width="200" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
           dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
           voluptatibus?</p>
@@ -69,9 +69,9 @@
           voluptatibus?</p>
       </section>
 
-      <section>
+      <section class="is-clearfix mb-4">
         <h3>Alias architecto at corporis</h3>
-        <img src={photo6} alt="North Cape" class="is-pulled-right" />
+        <img src={photo6} alt="North Cape" class="is-pulled-right ml-4" width="250" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
           dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
           voluptatibus?</p>
@@ -130,15 +130,6 @@
     text-transform: uppercase
     font-size: 64px
     line-height: 90px
-    margin: 0
-
-    a
-      color: #000
-      text-decoration: none
-      transition: 200ms ease
-
-      &:hover
-        color: $secondary
 
   h2
     font-size: 24px
@@ -152,46 +143,10 @@
     font-size: 16px
     margin: 0 0 15px 0
 
-  .cover
-    margin: 20px 0
-
-    img
-      max-width: 100%
-
   p
     margin: 15px 0
     line-height: 28px
     color: #333
-
-  section
-    margin-bottom: 15px
-
-    &::after
-      clear: both
-      content: " "
-      display: table
-
-  .is-pulled-left
-    width: 100%
-
-    +tablet
-      width: 230px
-      float: left
-      margin: 5px 20px 5px 0
-
-    +desktop
-      width: 250px
-
-  .is-pulled-right
-    width: 100%
-
-    +tablet
-      width: 230px
-      float: right
-      margin: 5px 0 5px 20px
-
-    +desktop
-      width: 250px
 
   .more
     border-top: solid 1px $grey
