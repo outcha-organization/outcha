@@ -87,7 +87,8 @@
       font-family: 'Anton', sans-serif
       text-transform: uppercase
       font-size: 64px
-      line-height: 90px
+      line-height: 65px
+      margin: 10px 0
 
     :global(h2)
       font-size: 24px

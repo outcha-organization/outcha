@@ -2,7 +2,6 @@
   import Project from '../Project.svelte';
   import Gallery from '../Gallery.svelte';
 
-  import cover from '$lib/images/projets/yukon/cover.webp';
   import photo1 from '$lib/images/projets/yukon/photo1.webp';
   import photo2 from '$lib/images/projets/yukon/photo2.webp';
   import photo3 from '$lib/images/projets/yukon/photo3.webp';
@@ -12,6 +11,7 @@
   import photo7 from '$lib/images/projets/yukon/photo7.webp';
   import photo8 from '$lib/images/projets/yukon/photo8.webp';
   import photo9 from '$lib/images/projets/yukon/photo9.webp';
+  import photo10 from '$lib/images/projets/yukon/photo10.webp';
 
   const images = [
     { image: photo1, width: 1024, height: 768 },
@@ -22,7 +22,8 @@
     { image: photo6, width: 1027, height: 800 },
     { image: photo7, width: 1007, height: 800 },
     { image: photo8, width: 960, height: 1280 },
-    { image: photo9, width: 960, height: 984 }
+    { image: photo9, width: 960, height: 984 },
+    { image: photo10, width: 960, height: 720 },
   ]
 </script>
 
@@ -43,7 +44,13 @@
         quasi!
       </p>
 
-      <p><img src={cover} alt="Yukon Arctic Ultra" /></p>
+      <p>
+        <iframe width="100%" height="340" src="https://www.youtube.com/embed/yLOG3ipbeNg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+      </p>
     </section>
 
     <section class="is-clearfix mb-4">
@@ -59,7 +66,7 @@
         repudiandae suscipit?
       </p>
 
-      <p><img src={photo5} alt="Yukon Arctic Ultra" class="is-pulled-left mr-4 my-1" width="250" /></p>
+      <p><img src={photo10} alt="Yukon Arctic Ultra" class="is-pulled-left mr-4 my-1" width="250" /></p>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
