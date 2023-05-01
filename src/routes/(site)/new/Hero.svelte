@@ -15,7 +15,7 @@
       <p class="subtitle">Outdoor</p>
       <p class="title">Challenges</p>
       <p class="tagline">Épanouissement, réalisation de rêves et partage par le sport</p>
-      <p><a href="https://youtu.be/yLOG3ipbeNg" class="button" target="_blank">Découvrir l'association <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span></a></p>
+      <p><a href="/association" class="button">Découvrir l'association <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span></a></p>
     </div>
   </div>
 </section>
