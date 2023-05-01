@@ -27,6 +27,11 @@
               </a>
             </li>
             <li>
+              <a href="https://www.youtube.com/@Outcha" target="_blank">
+                <span class="icon"><Icon icon="mdi:youtube" /></span>
+              </a>
+            </li>
+            <li>
               <a href="https://www.instagram.com/out_cha_association/" target="_blank">
                 <span class="icon"><Icon icon="mdi:instagram" /></span>
               </a>
