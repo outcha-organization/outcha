@@ -44,22 +44,27 @@
 
   #gallery
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr
     gap: 15px
     margin-bottom: 20px
 
-    +tablet
-      grid-template-columns: 1fr 1fr
+    a
+      margin: 0 auto
+      background-color: #001
+      width: 100%
 
     img
+      margin: 0 auto
       max-width: 100%
       display: block
       overflow: hidden
       object-fit: cover
-      width: 232px
       height: 174px
+      width: 100%
 
       +tablet
-        width: 137px
+        height: 90px
+
+      +desktop
         height: 103px
 </style>

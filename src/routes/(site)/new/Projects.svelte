@@ -10,7 +10,7 @@
     <h1><em>Projets</em> OUT'CHA</h1>
 
     <div class="projects">
-      <a href="/projects" class="card">
+      <a href="/projets/sandrine" class="card">
         <div class="card-image">
           <img src={sandrine} alt="Sandrine" />
         </div>
@@ -20,7 +20,7 @@
         </div>
       </a>
 
-      <a href="/projects" class="card">
+      <a href="/projets/laponie" class="card">
         <div class="card-image">
           <img src="{lapland}" alt="Laponie" />
         </div>
@@ -30,7 +30,7 @@
         </div>
       </a>
 
-      <a href="/projects" class="card">
+      <a href="/projets/grand-to-grand" class="card">
         <div class="card-image">
           <img src="{grandToGrand}" alt="Grand to Grand">
         </div>

@@ -53,7 +53,7 @@
         repudiandae suscipit?
       </p>
 
-      <p><img src={photo1} alt="Grand to Grand" class="is-pulled-left mr-4" width="200" /></p>
+      <p><img src={photo1} alt="Grand to Grand" class="is-pulled-left mr-4 my-1" width="200" /></p>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
@@ -71,7 +71,7 @@
 
     <section class="is-clearfix mb-4">
       <h3>Alias architecto at corporis</h3>
-      <p><img src={photo2} alt="Grand to Grand" class="is-pulled-right ml-4" width="250" /></p>
+      <p><img src={photo2} alt="Grand to Grand" class="is-pulled-right ml-4 my-1" width="250" /></p>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto at corporis, cum delectus deleniti
         dolor dolores ea eos expedita, explicabo facere magnam magni provident quia ratione rerum saepe
