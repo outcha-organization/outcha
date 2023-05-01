@@ -30,6 +30,13 @@
 
     <div class="sidebar">
       <slot name="sidebar" />
+      <hr>
+      <p class="has-text-centered">
+        <a href="/association" class="button is-small">
+          Soutenir l'association
+          <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
+        </a>
+      </p>
     </div>
   </div>
 </div>
@@ -81,6 +88,12 @@
 
       .icon
         font-size: 12px
+
+  hr
+    border: 0
+    height: 1px
+    background: $grey
+    margin: 20px 0
 
   .project
     :global(h1)
