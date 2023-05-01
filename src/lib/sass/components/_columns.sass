@@ -1,0 +1,12 @@
+@use '../utilities/mixins' as *
+
+.columns
+  display: flex
+  flex-direction: column
+
+  +tablet
+    flex-direction: row
+
+  .column
+    flex-grow: 1
+    flex-basis: 0
