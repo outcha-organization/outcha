@@ -21,7 +21,7 @@
 
   onMount(() => {
     new Swiper('.swiper', {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20,
       loop: true,
       autoplay: {
