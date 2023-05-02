@@ -1,4 +1,9 @@
 <script>
+  import { onMount } from 'svelte';
+  import Icon from '@iconify/svelte';
+  import Swiper, { Navigation } from 'swiper';
+  import 'swiper/css';
+
   import freudeHerrscht from '$lib/images/home/partners/freude-herrscht.png';
   import baechli from '$lib/images/home/partners/baechli.png';
   import maiday from '$lib/images/home/partners/maiday.png';
@@ -7,75 +12,96 @@
   import bonvin from '$lib/images/home/partners/bonvin.png';
   import bcv from '$lib/images/home/partners/bcv.png';
   import michot from '$lib/images/home/partners/michot.png';
+
+  onMount(() => {
+    new Swiper('.swiper', {
+      modules: [Navigation],
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next'
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 5,
+          spaceBetween: 35,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 20,
+        }
+      }
+    });
+  })
 </script>
 
 <section class="wrapper">
   <div class="container">
-    <ul class="partners">
-      <li>
-        <a href="https://www.freude-herrscht.ch/fran%C3%A7ais/" target="_blank">
+    <div class="swiper-button-prev">
+      <Icon icon="material-symbols:arrow-back-ios-new" />
+    </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide" href="https://www.freude-herrscht.ch/fran%C3%A7ais/" target="_blank">
           <img src="{freudeHerrscht}" alt="Freude herrscht" />
         </a>
-      </li>
-      <li>
-        <a href="https://www.baechli-bergsport.ch/fr" target="_blank">
+        <a class="swiper-slide" href="https://www.baechli-bergsport.ch/fr" target="_blank">
           <img src="{baechli}" alt="Bächli" />
         </a>
-      </li>
-      <li>
-        <a href="https://maiday.ch/" target="_blank">
+        <a class="swiper-slide" href="https://maiday.ch/" target="_blank">
           <img src="{maiday}" alt="Maiday" />
         </a>
-      </li>
-      <li>
-        <a href="https://www.compex.com/ch/fr/" target="_blank">
+        <a class="swiper-slide" href="https://www.compex.com/ch/fr/" target="_blank">
           <img src="{compex}" alt="Compex" />
         </a>
-      </li>
-      <li>
-        <a href="https://bgcm.ch/" target="_blank">
+        <a class="swiper-slide" href="https://bgcm.ch/" target="_blank">
           <img src="{bgcm}" alt="BGCM" />
         </a>
-      </li>
-      <li>
-        <a href="https://bonvin1858.ch/" target="_blank">
+        <a class="swiper-slide" href="https://bonvin1858.ch/" target="_blank">
           <img src="{bonvin}" alt="Bonvin" />
         </a>
-      </li>
-      <li>
-        <a href="https://www.bcv.ch/" target="_blank">
+        <a class="swiper-slide" href="https://www.bcv.ch/" target="_blank">
           <img src="{bcv}" alt="BCV" />
         </a>
-      </li>
-      <li>
-        <a href="http://eventente.ch/" target="_blank">
+        <a class="swiper-slide" href="http://eventente.ch/" target="_blank">
           <img src="{michot}" alt="Michot Eventente" />
         </a>
-      </li>
-    </ul>
+      </div>
+    </div>
+    <div class="swiper-button-next">
+      <Icon icon="material-symbols:arrow-forward-ios" />
+    </div>
   </div>
 </section>
 
 <style lang="sass">
+  @use '$lib/sass/utilities/variables' as *
   @use '$lib/sass/utilities/mixins' as *
 
-  .partners
-    list-style: none
-    margin: 20px 0
-    padding: 0
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    gap: 15px
+  .container
+    display: flex
+    gap: 10px
+    margin-top: 10px
 
-    li
-      display: flex
-      justify-content: center
+  .swiper-wrapper
+    flex-grow: 1
 
-    +tablet
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+  .swiper-button-prev,
+  .swiper-button-next
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    color: $grey
+    font-size: 32px
+    transition: color 200ms ease
 
-    img
-      max-width: 100%
-      max-height: 100px
-      display: block
+    &:hover
+      color: $grey-dark
 </style>
