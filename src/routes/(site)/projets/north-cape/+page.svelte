@@ -28,7 +28,7 @@
 
 <Project name="North Cape">
   <div slot="content">
-    <h3 class="m-0">Norvège</h3>
+    <h3 class="m-0">Récolte de dons / Norvège</h3>
     <h1>North Cape</h1>
     <h2>5500 kilomètre à vélo jusqu'en Norvège</h2>
 

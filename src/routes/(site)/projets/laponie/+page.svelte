@@ -41,7 +41,7 @@
 
 <Project name="Laponie">
   <div slot="content">
-    <h3 class="m-0">Finlande</h3>
+    <h3 class="m-0">Récolte de dons / Finlande</h3>
     <h1>Laponie</h1>
     <h2>La revanche du Grand Nord</h2>
 

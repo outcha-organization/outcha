@@ -26,7 +26,7 @@
 
 <Project name="Grand to Grand">
   <div slot="content">
-    <h3 class="m-0">Arizona USA</h3>
+    <h3 class="m-0">Aventure / Arizona USA</h3>
     <h1>Grand to Grand</h1>
     <h2>Un ultra-trail de 270 km en Utah</h2>
 

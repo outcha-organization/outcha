@@ -33,7 +33,7 @@
 
 <Project name="Yukon Arctic Ultra">
   <div slot="content">
-    <h3 class="m-0">Canada</h3>
+    <h3 class="m-0">Récolte de dons / Canada</h3>
     <h1>Yukon Arctic Ultra</h1>
     <h2>La course la plus froide du monde</h2>
 

@@ -41,7 +41,7 @@
 
 <Project name="Marathon Des Sables">
   <div slot="content">
-    <h3 class="m-0">Maroc</h3>
+    <h3 class="m-0">Récolte de dons / Maroc</h3>
     <h1>Marathon Des Sables</h1>
     <h2>Au coeur du Sahara Marocain</h2>
 

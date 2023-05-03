@@ -28,7 +28,7 @@
           <a href="/projets/north-cape"><img src={northCape} alt="North Cape" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Norvège</div>
+          <div class="location">Récolte de dons / Norvège</div>
           <h2><a href="/projets/north-cape">North Cape</a></h2>
           <h3>5500 kilomètre à vélo jusqu'en Norvège</h3>
           <p>
@@ -67,7 +67,7 @@
           <a href="/projets/laponie"><img src="{lapland}" alt="Laponie" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Finlande</div>
+          <div class="location">Récolte de dons / Finlande</div>
           <h2><a href="/projets/laponie">Laponie</a></h2>
           <h3>La revanche du Grand Nord</h3>
           <p>
@@ -106,7 +106,7 @@
           <a href="/projets/yukon"><img src="{yukon}" alt="Yukon Trail" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Canada</div>
+          <div class="location">Récolte de dons / Canada</div>
           <h2><a href="/projets/yukon">Yukon Arctic Ultra</a></h2>
           <h3>La course la plus froide du monde</h3>
           <p>
@@ -125,7 +125,7 @@
           <a href="/projets/grand-to-grand"><img src="{grandToGrand}" alt="Grand to Grand"></a>
         </div>
         <div class="card-content">
-          <div class="location">Arizona USA</div>
+          <div class="location">Aventure / Arizona USA</div>
           <h2><a href="/projets/grand-to-grand">Grand to Grand</a></h2>
           <h3>Un ultra-trail de 270 km en Utah</h3>
           <p>
@@ -144,7 +144,7 @@
           <a href="/projets/mds"><img src="{mds}" alt="Marathon des sables"></a>
         </div>
         <div class="card-content">
-          <div class="location">Maroc</div>
+          <div class="location">Récolte de dons / Maroc</div>
           <h2><a href="/projets/mds">Marathon des sables</a></h2>
           <h3>Au coeur du Sahara Marocain</h3>
           <p>
