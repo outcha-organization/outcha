@@ -81,9 +81,6 @@
 </section>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
   .container
     display: flex
     gap: 10px

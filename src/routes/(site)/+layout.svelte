@@ -9,8 +9,6 @@
 <Footer />
 
 <style lang="sass">
-  @use '$lib/sass/utilities/mixins' as *
-
   :global(body)
     margin-top: 70px
     +tablet

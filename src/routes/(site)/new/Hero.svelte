@@ -21,9 +21,6 @@
 </section>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
   .hero
     position: relative
     display: grid

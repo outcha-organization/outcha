@@ -117,9 +117,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
   .wrapper
     background-color: #fff
     padding: 30px 0

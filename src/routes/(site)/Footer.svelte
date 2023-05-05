@@ -51,9 +51,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
   .border-top
     background: url("../../lib/images/border-blue-top.webp") repeat-x center top
     height: 80px

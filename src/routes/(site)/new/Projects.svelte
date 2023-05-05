@@ -51,9 +51,6 @@
 </section>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-  @use '$lib/sass/utilities/mixins' as *
-
   .wrapper
     background-image: url("../../../lib/images/bg-green-dots.jpg")
     background-size: cover

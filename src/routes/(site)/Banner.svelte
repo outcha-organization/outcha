@@ -25,8 +25,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/mixins' as *
-
   .banner
     height: 260px
     display: flex

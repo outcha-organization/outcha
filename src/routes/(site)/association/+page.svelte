@@ -102,8 +102,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-
   .wrapper
     background-color: #fff
     background-image: url("../../../lib/images/bg-green-dots.jpg")

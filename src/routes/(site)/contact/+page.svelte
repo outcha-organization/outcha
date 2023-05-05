@@ -40,8 +40,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/variables' as *
-
   .wrapper
     background-color: #fff
     padding: 30px 0

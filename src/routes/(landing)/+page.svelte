@@ -22,8 +22,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/mixins' as *
-
   :global(body)
     -moz-osx-font-smoothing: grayscale
     -webkit-font-smoothing: antialiased

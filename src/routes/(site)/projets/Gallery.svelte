@@ -32,8 +32,6 @@
 </div>
 
 <style lang="sass">
-  @use '$lib/sass/utilities/mixins' as *
-
   h2
     font-family: 'Anton', sans-serif
     text-transform: uppercase

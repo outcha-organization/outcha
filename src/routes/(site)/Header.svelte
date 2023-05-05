@@ -41,8 +41,6 @@
 {/if}
 
 <style lang="sass">
-  @use '$lib/sass/utilities/mixins' as *
-
   #header
     background-color: #fff
     position: fixed
