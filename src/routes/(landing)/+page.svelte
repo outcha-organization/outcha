@@ -12,10 +12,15 @@
     <div class="hero-head"></div>
     <div class="hero-content">
       <img src={logo} alt="Logo" class="logo" />
-      <p>Nouveau site en construction</p>
       <a href="https://outcha.weebly.com" class="btn">
         Voir l'ancien site
       </a>
+      <p class="my-4">
+        <small>
+          <a href="/new">Voir le nouveau site</a>
+          (en construction)
+        </small>
+      </p>
     </div>
     <div class="hero-foot"></div>
   </div>
@@ -52,6 +57,9 @@
     align-items: center
     background-color: #fff
     padding: 20px 16px
+
+    a
+      color: #ca2b14
 
     +tablet
       padding: 30px 24px
