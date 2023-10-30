@@ -10,7 +10,7 @@
     <div class="content">
       <div class="content-left">
         <div id="logo">
-          <a href="/new"><img src={logo} alt="Logo" /></a>
+          <a href="/"><img src={logo} alt="Logo" /></a>
         </div>
 
         <p>Association basée à Lausanne (Suisse)</p>

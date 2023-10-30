@@ -17,7 +17,7 @@
       </a>
       <p class="my-4">
         <small>
-          <a href="/new">Voir le nouveau site</a>
+          <a href="/">Voir le nouveau site</a>
           (en construction)
         </small>
       </p>
