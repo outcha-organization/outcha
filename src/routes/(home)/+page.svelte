@@ -1,6 +1,5 @@
 <script>
   import Hero from "./Hero.svelte";
-  import Partners from "./Partners.svelte";
   import Projects from "./Projects.svelte";
 </script>
 
@@ -11,5 +10,4 @@
 </svelte:head>
 
 <Hero />
-<Partners />
 <Projects />
