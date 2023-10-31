@@ -4,6 +4,7 @@
   import 'swiper/css';
   import Banner from "../Banner.svelte";
   import banner from '$lib/images/association/banner.webp';
+  import qrTwint from '$lib/images/association/qr-twint.png';
   import Icon from '@iconify/svelte';
 
   import grandToGrand1 from '$lib/images/association/projects/grand-to-grand-1.webp';
@@ -97,6 +98,9 @@
         IBAN: CH53 0076 7000 S546 2495 4<br>
         Numéro TWINT : 078 958 06 26
       </div>
+      <p>
+        <img src={qrTwint} width="200" height="200" />
+      </p>
     </div>
   </section>
 </div>
