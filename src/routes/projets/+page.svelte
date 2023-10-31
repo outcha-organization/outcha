@@ -1,12 +1,37 @@
 <script>
+  import { onMount } from "svelte";
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+  import 'photoswipe/style.css';
   import Banner from "../Banner.svelte";
   import banner from '$lib/images/projets/banner.webp';
   import Icon from "@iconify/svelte";
 
   import freudeHerrscht from '$lib/images/projets/freude-herrscht/photo1.webp';
+  import freudeHerrscht2 from '$lib/images/projets/freude-herrscht/photo2.webp';
+  import freudeHerrscht3 from '$lib/images/projets/freude-herrscht/photo3.webp';
+
   import afghansMontagne from '$lib/images/projets/afghans-montagne/photo1.webp';
+  import afghansMontagne2 from '$lib/images/projets/afghans-montagne/photo2.webp';
+  import afghansMontagne3 from '$lib/images/projets/afghans-montagne/photo3.webp';
+
   import sandrine from '$lib/images/projets/sandrine/photo1.webp';
+  import sandrine2 from '$lib/images/projets/sandrine/photo2.webp';
+  import sandrine3 from '$lib/images/projets/sandrine/photo3.webp';
+
   import afghansSki from '$lib/images/projets/afghans-ski/photo1.webp';
+  import afghansSki2 from '$lib/images/projets/afghans-ski/photo2.webp';
+  import afghansSki3 from '$lib/images/projets/afghans-ski/photo3.webp';
+
+  onMount(() => {
+    let lightbox = new PhotoSwipeLightbox({
+      gallery: '.card-image',
+      children: 'a',
+      imageClickAction: 'close',
+      tapAction: 'close',
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  })
 </script>
 
 <svelte:head>
@@ -22,7 +47,15 @@
     <div class="projects">
       <div class="card" id="camps">
         <div class="card-image">
-          <a href="#"><img src={freudeHerrscht} alt="Freude Herrscht" /></a>
+          <a href={freudeHerrscht} data-pswp-width="650" data-pswp-height="650">
+            <img src={freudeHerrscht} alt="Freude Herrscht" />
+          </a>
+          <a href={freudeHerrscht2} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={freudeHerrscht2} alt="Freude Herrscht" />
+          </a>
+          <a href={freudeHerrscht3} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={freudeHerrscht3} alt="Freude Herrscht" />
+          </a>
         </div>
         <div class="card-content">
           <h2><a href="/projets#camps">Camps d'activités</a></h2>
@@ -37,7 +70,15 @@
 
       <div class="card" id="montagne">
         <div class="card-image">
-          <a href="#"><img src={afghansMontagne} alt="WE à la montagne" /></a>
+          <a href={afghansMontagne} data-pswp-width="650" data-pswp-height="650">
+            <img src={afghansMontagne} alt="WE à la montagne" />
+          </a>
+          <a href={afghansMontagne2} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={afghansMontagne2} alt="WE à la montagne" />
+          </a>
+          <a href={afghansMontagne3} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={afghansMontagne3} alt="WE à la montagne" />
+          </a>
         </div>
         <div class="card-content">
           <h2><a href="/projets#montagne">Tour du Miroir d’Argentine</a></h2>
@@ -52,7 +93,15 @@
 
       <div class="card" id="sandrine">
         <div class="card-image">
-          <a href="#"><img src={sandrine} alt="Sandrine à Sierre-Zinal" /></a>
+          <a href={sandrine} data-pswp-width="650" data-pswp-height="650">
+            <img src={sandrine} alt="Sandrine à Sierre-Zinal" />
+          </a>
+          <a href={sandrine2} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={sandrine3} alt="Sandrine à Sierre-Zinal" />
+          </a>
+          <a href={sandrine3} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={sandrine3} alt="Sandrine à Sierre-Zinal" />
+          </a>
         </div>
         <div class="card-content">
           <h2><a href="/projets#sandrine">Sandrine à Sierre-Zinal</a></h2>
@@ -67,7 +116,15 @@
 
       <div class="card" id="ski">
         <div class="card-image">
-          <a href="#"><img src={afghansSki} alt="Ski de fond" /></a>
+          <a href={afghansSki} data-pswp-width="650" data-pswp-height="650">
+            <img src={afghansSki} alt="Ski de fond" />
+          </a>
+          <a href={afghansSki2} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={afghansSki2} alt="Ski de fond" />
+          </a>
+          <a href={afghansSki3} data-pswp-width="650" data-pswp-height="650" style="display: none">
+            <img src={afghansSki3} alt="Ski de fond" />
+          </a>
         </div>
         <div class="card-content">
           <h2><a href="/projets#ski">Ski de fond</a></h2>
