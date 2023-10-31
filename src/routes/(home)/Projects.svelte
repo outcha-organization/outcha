@@ -1,4 +1,7 @@
 <script>
+  import freudeHerrscht from '$lib/images/home/projects/freude-herrscht.webp';
+  import afghansMontagne from '$lib/images/home/projects/afghans-montagne.webp';
+  import afghansSki from '$lib/images/home/projects/afghans-ski.webp';
   import sandrine from '$lib/images/home/projects/sandrine.webp';
   import lapland from '$lib/images/home/projects/lapland.webp';
   import grandToGrand from '$lib/images/home/projects/grand-to-grand.webp';
@@ -7,10 +10,30 @@
 
 <section class="wrapper">
   <div class="container">
-    <h1><em>Projets</em> OUT'CHA</h1>
+    <h1><em>Projets de</em> soutiens</h1>
 
     <div class="projects">
-      <a href="/projets/sandrine" class="card">
+      <a href="/projets" class="card">
+        <div class="card-image">
+          <img src="{freudeHerrscht}" alt="Freude Herrscht" />
+        </div>
+        <div class="card-content">
+          <h2 class="title">Camps d'activités</h2>
+          <h3 class="subtitle">avec Freude Herrscht</h3>
+        </div>
+      </a>
+
+      <a href="/projets" class="card">
+        <div class="card-image">
+          <img src="{afghansMontagne}" alt="WE à la montagne">
+        </div>
+        <div class="card-content">
+          <h2 class="title">Montagne</h2>
+          <h3 class="subtitle">avec des réfugiés Afghans</h3>
+        </div>
+      </a>
+
+      <a href="/projets" class="card">
         <div class="card-image">
           <img src={sandrine} alt="Sandrine" />
         </div>
@@ -20,23 +43,13 @@
         </div>
       </a>
 
-      <a href="/projets/laponie" class="card">
+      <a href="/projets" class="card">
         <div class="card-image">
-          <img src="{lapland}" alt="Laponie" />
+          <img src="{afghansSki}" alt="Ski de fond">
         </div>
         <div class="card-content">
-          <h2 class="title">Laponie</h2>
-          <h3 class="subtitle">La revanche du Grand Nord</h3>
-        </div>
-      </a>
-
-      <a href="/projets/grand-to-grand" class="card">
-        <div class="card-image">
-          <img src="{grandToGrand}" alt="Grand to Grand">
-        </div>
-        <div class="card-content">
-          <h2 class="title">Grand to Grand</h2>
-          <h3 class="subtitle">Un ultra-trail de 270 km en Utah</h3>
+          <h2 class="title">Ski de fond</h2>
+          <h3 class="subtitle">avec des réfugiés Afghans</h3>
         </div>
       </a>
     </div>
@@ -85,7 +98,7 @@
 
   .card
     width: 100%
-    height: 320px
+    height: 250px
     overflow: hidden
     position: relative
     max-width: 450px
@@ -118,7 +131,7 @@
       font-family: 'Anton', sans-serif
       text-transform: uppercase
       text-shadow: 1px 1px 4px #333
-      font-size: 40px
+      font-size: 25px
       margin: 0
 
     .subtitle
