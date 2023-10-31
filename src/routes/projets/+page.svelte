@@ -3,13 +3,10 @@
   import banner from '$lib/images/projets/banner.webp';
   import Icon from "@iconify/svelte";
 
-  import northCape from "$lib/images/projets/north-cape.webp";
-  import skiDeFond from "$lib/images/projets/ski-de-fond.webp";
-  import lapland from "$lib/images/projets/lapland.webp";
-  import sandrine from "$lib/images/projets/sandrine.webp";
-  import yukon from "$lib/images/projets/yukon.webp";
-  import grandToGrand from "$lib/images/projets/grand-to-grand.webp";
-  import mds from "$lib/images/projets/mds.webp";
+  import freudeHerrscht from '$lib/images/projets/freude-herrscht/photo1.webp';
+  import afghansMontagne from '$lib/images/projets/afghans-montagne/photo1.webp';
+  import sandrine from '$lib/images/projets/sandrine/photo1.webp';
+  import afghansSki from '$lib/images/projets/afghans-ski/photo1.webp';
 </script>
 
 <svelte:head>
@@ -23,138 +20,63 @@
 <div class="wrapper">
   <div class="container">
     <div class="projects">
-      <div class="card">
+      <div class="card" id="camps">
         <div class="card-image">
-          <a href="/projets/north-cape"><img src={northCape} alt="North Cape" /></a>
+          <a href="#"><img src={freudeHerrscht} alt="Freude Herrscht" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Récolte de dons / Norvège</div>
-          <h2><a href="/projets/north-cape">North Cape</a></h2>
-          <h3>5500 kilomètre à vélo jusqu'en Norvège</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consequuntur eaque enim labore modi nostrum
-            odio perspiciatis quo repellendus tempore. Architecto assumenda earum ipsa nisi nulla perferendis quasi
-            tempora vel!
-          </p>
-          <a href="/projets/north-cape" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
+          <h2><a href="/projets#camps">Camps d'activités</a></h2>
+          <h3>en collaboration avec la Fondation Freude Herrscht</h3>
+          <ul>
+            <li>Des dixaines d’enfants dans le besoin peuvent partir à la montagne et profiter d’activité en plain air</li>
+            <li>Une collaboration avec la Fondation Freude Herrscht</li>
+            <li>Montant récolté et reversé à la Fondation >CHF 12’000.-</li>
+          </ul>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="montagne">
         <div class="card-image">
-          <a href="/projets/ski-de-fond"><img src={skiDeFond} alt="Ski de fond" /></a>
+          <a href="#"><img src={afghansMontagne} alt="WE à la montagne" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Suisse</div>
-          <h2><a href="/projets/ski-de-fond">Ski de fond</a></h2>
-          <h3>Rencontre avec des réfugiés Afghans</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam assumenda dolorem, eos
-            error eum in maxime molestiae officia placeat porro quaerat quam, quibusdam quidem saepe vel vero. Sapiente!
-          </p>
-          <a href="/projets/ski-de-fond" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
+          <h2><a href="/projets#montagne">Tour du Miroir d’Argentine</a></h2>
+          <h3>avec cinq jeunes réfugiés Afghans</h3>
+          <ul>
+            <li>Grâce à Out’cha, Elham, Mohammad, Ramezan, Jawad et Layic ont pu profiter d’un week-end à la montagne et d’une nuit à l’alpage de la Vare</li>
+            <li>Certains de ces Afghans ont traversés la Méditerranée en bateau gonflable!</li>
+            <li>Budget pour cette activité >CHF 800.- (transports, repas, nuitées…)</li>
+          </ul>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="sandrine">
         <div class="card-image">
-          <a href="/projets/laponie"><img src="{lapland}" alt="Laponie" /></a>
+          <a href="#"><img src={sandrine} alt="Sandrine à Sierre-Zinal" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Récolte de dons / Finlande</div>
-          <h2><a href="/projets/laponie">Laponie</a></h2>
-          <h3>La revanche du Grand Nord</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias architecto aut deserunt
-            dolor dolorem error et explicabo fugiat ipsum nam possimus, praesentium quibusdam, quis quos sequi similique
-            voluptatibus?
-          </p>
-          <a href="/projets/laponie" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
+          <h2><a href="/projets#sandrine">Sandrine à Sierre-Zinal</a></h2>
+          <h3>le rêve de Sandrine Chauvy aveugle à 95%</h3>
+          <ul>
+            <li>Sandrine avait des rêves, participer et terminer Sierre-Zinal ainsi l’Ultracks de Zermatt</li>
+            <li>Durant l’année 2022, l’équpie Out’cha s’est mobilisé pour entrainer, accompagner et motiver Sandrine afin qu’elle réalise ses rêves</li>
+            <li>Budget pour cette activité >CHF 600.- (hotels, inscription, matériel…)</li>
+          </ul>
         </div>
       </div>
 
-      <div class="card">
+      <div class="card" id="ski">
         <div class="card-image">
-          <a href="/projets/sandrine"><img src={sandrine} alt="Sandrine" /></a>
+          <a href="#"><img src={afghansSki} alt="Ski de fond" /></a>
         </div>
         <div class="card-content">
-          <div class="location">Suisse</div>
-          <h2><a href="/projets/sandrine">Sandrine</a></h2>
-          <h3>Courir Sierre-Zinal en étant aveugle</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam assumenda dolorem, eos
-            error eum in maxime molestiae officia placeat porro quaerat quam, quibusdam quidem saepe vel vero. Sapiente!
-          </p>
-          <a href="/projets/sandrine" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <a href="/projets/yukon"><img src="{yukon}" alt="Yukon Trail" /></a>
-        </div>
-        <div class="card-content">
-          <div class="location">Récolte de dons / Canada</div>
-          <h2><a href="/projets/yukon">Yukon Arctic Ultra</a></h2>
-          <h3>La course la plus froide du monde</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet aspernatur dolorum eligendi esse
-            fugiat ipsa ipsam labore laudantium magnam magni molestiae nemo nobis placeat quae quibusdam sint, veniam.
-          </p>
-          <a href="/projets/yukon" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <a href="/projets/grand-to-grand"><img src="{grandToGrand}" alt="Grand to Grand"></a>
-        </div>
-        <div class="card-content">
-          <div class="location">Aventure / Arizona USA</div>
-          <h2><a href="/projets/grand-to-grand">Grand to Grand</a></h2>
-          <h3>Un ultra-trail de 270 km en Utah</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam assumenda dolorem, eos
-            error eum in maxime molestiae officia placeat porro quaerat quam, quibusdam quidem saepe vel vero. Sapiente!
-          </p>
-          <a href="/projets/grand-to-grand" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-image">
-          <a href="/projets/mds"><img src="{mds}" alt="Marathon des sables"></a>
-        </div>
-        <div class="card-content">
-          <div class="location">Récolte de dons / Maroc</div>
-          <h2><a href="/projets/mds">Marathon des sables</a></h2>
-          <h3>Au coeur du Sahara Marocain</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias aliquam assumenda dolorem, eos
-            error eum in maxime molestiae officia placeat porro quaerat quam, quibusdam quidem saepe vel vero. Sapiente!
-          </p>
-          <a href="/projets/mds" class="more">
-            Lire la suite
-            <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
-          </a>
+          <h2><a href="/projets#ski">Ski de fond</a></h2>
+          <h3>avec un Ukrainien et quatre jeunes réfugiés Afghans</h3>
+          <ul>
+            <li>Avec l’équipe Out’cha, Sardar, Yousef, Mehram, Hasmatullah et Mykola ont pu passer une journée aux Mosses pour tester les joies du ski de fond</li>
+            <li>Joie, rire et expérience positives assurées</li>
+            <li>Budget pour cette activité >CHF 500.- (transports, repas, location matériel…)</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -247,6 +169,14 @@
       p
         line-height: 24px
         margin: 1rem 0
+
+      ul
+        list-style-type: disc
+        margin: 20px 12px
+
+      li
+        margin: 12px
+        line-height: 1.3
 
       a
         &.more

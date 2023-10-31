@@ -3,8 +3,6 @@
   import afghansMontagne from '$lib/images/home/projects/afghans-montagne.webp';
   import afghansSki from '$lib/images/home/projects/afghans-ski.webp';
   import sandrine from '$lib/images/home/projects/sandrine.webp';
-  import lapland from '$lib/images/home/projects/lapland.webp';
-  import grandToGrand from '$lib/images/home/projects/grand-to-grand.webp';
   import Icon from "@iconify/svelte";
 </script>
 
@@ -13,7 +11,7 @@
     <h1><em>Projets de</em> soutiens</h1>
 
     <div class="projects">
-      <a href="/projets" class="card">
+      <a href="/projets#camps" class="card">
         <div class="card-image">
           <img src="{freudeHerrscht}" alt="Freude Herrscht" />
         </div>
@@ -23,7 +21,7 @@
         </div>
       </a>
 
-      <a href="/projets" class="card">
+      <a href="/projets#montagne" class="card">
         <div class="card-image">
           <img src="{afghansMontagne}" alt="WE à la montagne">
         </div>
@@ -33,7 +31,7 @@
         </div>
       </a>
 
-      <a href="/projets" class="card">
+      <a href="/projets#sandrine" class="card">
         <div class="card-image">
           <img src={sandrine} alt="Sandrine" />
         </div>
@@ -43,7 +41,7 @@
         </div>
       </a>
 
-      <a href="/projets" class="card">
+      <a href="/projets#ski" class="card">
         <div class="card-image">
           <img src="{afghansSki}" alt="Ski de fond">
         </div>
