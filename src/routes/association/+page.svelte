@@ -7,18 +7,21 @@
   import qrTwint from '$lib/images/association/qr-twint.png';
   import Icon from '@iconify/svelte';
 
-  import grandToGrand1 from '$lib/images/association/projects/grand-to-grand-1.webp';
-  import grandToGrand2 from '$lib/images/association/projects/grand-to-grand-2.webp';
-  import grandToGrand3 from '$lib/images/association/projects/grand-to-grand-3.webp';
-  import lapland1 from '$lib/images/association/projects/lapland-1.webp';
-  import lapland2 from '$lib/images/association/projects/lapland-2.webp';
-  import lapland3 from '$lib/images/association/projects/lapland-3.webp';
-  import mds1 from '$lib/images/association/projects/mds-1.webp';
-  import mds2 from '$lib/images/association/projects/mds-2.webp';
-  import mds3 from '$lib/images/association/projects/mds-3.webp';
-  import yukon1 from '$lib/images/association/projects/yukon-1.webp';
-  import yukon2 from '$lib/images/association/projects/yukon-2.webp';
-  import yukon3 from '$lib/images/association/projects/yukon-3.webp';
+  import freudeHerrscht from '$lib/images/projets/freude-herrscht/photo1.webp';
+  import freudeHerrscht2 from '$lib/images/projets/freude-herrscht/photo2.webp';
+  import freudeHerrscht3 from '$lib/images/projets/freude-herrscht/photo3.webp';
+
+  import afghansMontagne from '$lib/images/projets/afghans-montagne/photo1.webp';
+  import afghansMontagne2 from '$lib/images/projets/afghans-montagne/photo2.webp';
+  import afghansMontagne3 from '$lib/images/projets/afghans-montagne/photo3.webp';
+
+  import sandrine from '$lib/images/projets/sandrine/photo1.webp';
+  import sandrine2 from '$lib/images/projets/sandrine/photo2.webp';
+  import sandrine3 from '$lib/images/projets/sandrine/photo3.webp';
+
+  import afghansSki from '$lib/images/projets/afghans-ski/photo1.webp';
+  import afghansSki2 from '$lib/images/projets/afghans-ski/photo2.webp';
+  import afghansSki3 from '$lib/images/projets/afghans-ski/photo3.webp';
 
   onMount(() => {
     new Swiper('.swiper', {
@@ -69,18 +72,18 @@
 
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <a href="/projets/grand-to-grand" class="swiper-slide"><img src={grandToGrand2} /></a>
-          <a href="/projets/mds" class="swiper-slide"><img src={mds3} /></a>
-          <a href="/projets/laponie" class="swiper-slide"><img src={lapland2} /></a>
-          <a href="/projets/grand-to-grand" class="swiper-slide"><img src={grandToGrand1} /></a>
-          <a href="/projets/laponie" class="swiper-slide"><img src={lapland3} /></a>
-          <a href="/projets/grand-to-grand" class="swiper-slide"><img src={grandToGrand3} /></a>
-          <a href="/projets/mds" class="swiper-slide"><img src={mds2} /></a>
-          <a href="/projets/laponie" class="swiper-slide"><img src={lapland1} /></a>
-          <a href="/projets/mds" class="swiper-slide"><img src={mds1} /></a>
-          <a href="/projets/yukon" class="swiper-slide"><img src={yukon3} /></a>
-          <a href="/projets/yukon" class="swiper-slide"><img src={yukon2} /></a>
-          <a href="/projets/yukon" class="swiper-slide"><img src={yukon1} /></a>
+          <a href="/projets#camps" class="swiper-slide"><img src={freudeHerrscht2} /></a>
+          <a href="/projets#montagne" class="swiper-slide"><img src={afghansMontagne2} /></a>
+          <a href="/projets#montagne" class="swiper-slide"><img src={afghansMontagne} /></a>
+          <a href="/projets#camps" class="swiper-slide"><img src={freudeHerrscht} /></a>
+          <a href="/projets#camps" class="swiper-slide"><img src={freudeHerrscht3} /></a>
+          <a href="/projets#montagne" class="swiper-slide"><img src={afghansMontagne3} /></a>
+          <a href="/projets#sandrine" class="swiper-slide"><img src={sandrine3} /></a>
+          <a href="/projets#sandrine" class="swiper-slide"><img src={sandrine2} /></a>
+          <a href="/projets#sandrine" class="swiper-slide"><img src={sandrine} /></a>
+          <a href="/projets#ski" class="swiper-slide"><img src={afghansSki3} /></a>
+          <a href="/projets#ski" class="swiper-slide"><img src={afghansSki2} /></a>
+          <a href="/projets#ski" class="swiper-slide"><img src={afghansSki} /></a>
         </div>
         <div class="swiper-pagination"></div>
       </div>
