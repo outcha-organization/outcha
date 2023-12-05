@@ -1,6 +1,7 @@
 <script>
-  import Hero from "./Hero.svelte";
-  import Projects from "./Projects.svelte";
+  import Hero from './Hero.svelte';
+  import Projects from './Projects.svelte';
+  import Donate from '../Donate.svelte';
 </script>
 
 <svelte:head>
@@ -11,3 +12,4 @@
 
 <Hero />
 <Projects />
+<Donate />

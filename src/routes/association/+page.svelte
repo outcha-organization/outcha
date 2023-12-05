@@ -4,8 +4,8 @@
   import 'swiper/css';
   import Banner from "../Banner.svelte";
   import banner from '$lib/images/association/banner.webp';
-  import qrTwint from '$lib/images/association/qr-twint.png';
   import Icon from '@iconify/svelte';
+  import Donate from '../Donate.svelte';
 
   import freudeHerrscht from '$lib/images/projets/freude-herrscht/photo1.webp';
   import freudeHerrscht2 from '$lib/images/projets/freude-herrscht/photo2.webp';
@@ -95,15 +95,7 @@
         </a>
       </p>
 
-      <h2>Aidez nous</h2>
-      <div class="card">
-        <h3>Pour soutenir le projet:</h3>
-        IBAN: CH53 0076 7000 S546 2495 4<br>
-        Numéro TWINT : 078 958 06 26
-      </div>
-      <p>
-        <img src={qrTwint} width="200" height="200" />
-      </p>
+      <Donate />
     </div>
   </section>
 </div>
@@ -157,8 +149,4 @@
       font-weight: 500
       line-height: 30px
       text-align: center
-
-    .card
-      text-align: center
-      line-height: 24px
 </style>
