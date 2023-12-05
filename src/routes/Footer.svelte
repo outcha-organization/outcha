@@ -52,7 +52,7 @@
 
 <style lang="sass">
   .border-top
-    background: url("../../lib/images/border-blue-top.webp") repeat-x center top
+    background: url("../lib/images/border-blue-top.webp") repeat-x center top
     height: 80px
 
   #footer
