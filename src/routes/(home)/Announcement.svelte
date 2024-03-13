@@ -6,7 +6,7 @@
   let active = false;
 
   onMount(() => {
-    // active = true;
+    active = true;
   })
 </script>
 
