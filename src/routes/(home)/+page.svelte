@@ -1,4 +1,5 @@
 <script>
+  import Announcement from './Announcement.svelte';
   import Hero from './Hero.svelte';
   import Projects from './Projects.svelte';
   import Donate from '../Donate.svelte';
@@ -11,5 +12,6 @@
 </svelte:head>
 
 <Hero />
+<Announcement />
 <Projects />
 <Donate />
