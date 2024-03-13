@@ -43,7 +43,7 @@
     z-index: 1
     width: 100%
     height: 100%
-    background: url("../../../lib/images/border-white-bottom.webp") repeat-x center bottom
+    background: url("../../lib/images/border-white-bottom.webp") repeat-x center bottom
     background-size: 100%
     display: flex
     justify-content: center
