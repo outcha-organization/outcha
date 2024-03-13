@@ -53,9 +53,11 @@
     </div>
 
     <div class="more">
-      <a href="/projets" class="button">
-        Voir tous les projets
-        <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
+      <a href="/projets" class="button is-primary">
+        <span>Voir tous les projets</span>
+        <span class="icon">
+          <Icon icon="material-symbols:arrow-forward-ios" />
+        </span>
       </a>
     </div>
   </div>
@@ -77,7 +79,7 @@
 
     em
       font-family: 'Great Sejagad', sans-serif
-      color: $primary
+      color: $primary-dark
       display: block
       font-size: 32px
       font-weight: 400
@@ -122,17 +124,19 @@
     display: flex
     flex-direction: column
     justify-content: flex-end
-    color: #fff
     padding: 16px
 
     .title
+      color: #fff
       font-family: 'Anton', sans-serif
+      font-weight: 400
       text-transform: uppercase
       text-shadow: 1px 1px 4px #333
       font-size: 25px
       margin: 0
 
     .subtitle
+      color: #fff
       text-shadow: 1px 1px 4px #333
       font-size: 22px
       margin: 0

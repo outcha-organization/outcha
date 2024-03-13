@@ -22,7 +22,7 @@
           Rue Centrale 6<br>
           1003 Lausanne, Suisse
         </p>
-        <p><a href="mailto:info@outcha.org" class="button is-small">info@outcha.org</a></p>
+        <p><a href="mailto:info@outcha.org" class="button is-primary">info@outcha.org</a></p>
       </div>
       <div class="column">
         <h2>Nous soutenir</h2>

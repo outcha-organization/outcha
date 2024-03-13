@@ -14,7 +14,7 @@
         </div>
 
         <p>Association basée à Lausanne (Suisse)</p>
-        <p><a href="mailto:info@outcha.org">Contactez-nous</a></p>
+        <p><a href="mailto:info@outcha.org" class="is-underlined">Contactez-nous</a></p>
       </div>
 
       <div class="content-right">
@@ -23,17 +23,17 @@
           <ul>
             <li>
               <a href="https://www.facebook.com/outchaswitzerland" target="_blank">
-                <span class="icon"><Icon icon="mdi:facebook" /></span>
+                <span class="icon is-large"><Icon icon="mdi:facebook" /></span>
               </a>
             </li>
             <li>
               <a href="https://www.youtube.com/@Outcha" target="_blank">
-                <span class="icon"><Icon icon="mdi:youtube" /></span>
+                <span class="icon is-large"><Icon icon="mdi:youtube" /></span>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/out_cha_association/" target="_blank">
-                <span class="icon"><Icon icon="mdi:instagram" /></span>
+                <span class="icon is-large"><Icon icon="mdi:instagram" /></span>
               </a>
             </li>
           </ul>
@@ -45,7 +45,7 @@
 </section>
 
 <div id="post-footer">
-  <span class="icon icon-lg"><Icon icon="ph:code-bold" /></span> with
+  <span class="icon"><Icon icon="ph:code-bold" /></span> with
   <span class="icon"><Icon icon="mdi:cards-heart" /></span> by
   <a href="https://cyrilsuzat.com" target="_blank">Cyril Suzat</a>
 </div>
@@ -56,9 +56,12 @@
     height: 80px
 
   #footer
-    background-color: $tertiary
+    background-color: #171c34
     padding: 40px 0
     color: #a1a4ac
+
+    h4
+      color: #a1a4ac
 
   .content
     display: flex
@@ -79,7 +82,7 @@
     transition: all 200ms ease
 
     &:hover
-      color: $secondary
+      color: $primary
 
   #logo
     img
@@ -123,12 +126,11 @@
     padding: 0 0 4px 0
 
     .icon
-      font-size: 13px
+      font-size: 16px
       position: relative
-      bottom: -3px
-
-      &.icon-lg
-        font-size: 15px
+      bottom: -4px
+      height: 1.2rem
+      width: 1.2rem
 
     a
       text-decoration: none

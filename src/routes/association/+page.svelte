@@ -89,9 +89,11 @@
       </div>
 
       <p>
-        <a href="/projets" class="button">
-          Voir tous les projets
-          <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
+        <a href="/projets" class="button is-primary">
+          <span>Voir tous les projets</span>
+          <span class="icon">
+            <Icon icon="material-symbols:arrow-forward-ios" />
+          </span>
         </a>
       </p>
 
@@ -119,7 +121,7 @@
 
     em
       font-family: 'Great Sejagad', sans-serif
-      color: $primary
+      color: $primary-dark
       display: block
       font-size: 45px
       font-weight: 400

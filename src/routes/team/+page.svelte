@@ -129,11 +129,11 @@
     color: #1d1e21
 
   a
-    color: #1d1e21
+    color: $primary
     transition: all 200ms ease
 
     &:hover
-      color: $secondary
+      color: $primary-dark
 
   .person
     display: flex

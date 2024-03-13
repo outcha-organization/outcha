@@ -3,25 +3,32 @@
   import Icon from '@iconify/svelte';
 </script>
 
-<section class="hero">
+<section class="hero-banner">
   <video
-          class="hero-video"
+          class="hero-banner-video"
           src="{video}"
           playsinline autoplay muted loop>
   </video>
 
-  <div class="hero-content">
+  <div class="hero-banner-content">
     <div class="container">
-      <p class="subtitle">Outdoor</p>
+      <p class="subtitle has-text-primary-dark	">Outdoor</p>
       <p class="title">Challenges</p>
       <p class="tagline">Épanouissement, réalisation de rêves et partage par le sport</p>
-      <p><a href="/association" class="button">Découvrir l'association <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span></a></p>
+      <p>
+        <a href="/association" class="button is-primary">
+          <span>Découvrir l'association</span>
+          <span class="icon">
+            <Icon icon="material-symbols:arrow-forward-ios" />
+          </span>
+        </a>
+      </p>
     </div>
   </div>
 </section>
 
 <style lang="sass">
-  .hero
+  .hero-banner
     position: relative
     display: grid
     place-items: center
@@ -32,14 +39,14 @@
     +tablet
       min-height: 500px
 
-  .hero-video
+  .hero-banner-video
     position: absolute
     z-index: 0
     object-fit: cover
     width: 100%
     height: 100%
 
-  .hero-content
+  .hero-banner-content
     z-index: 1
     width: 100%
     height: 100%
@@ -53,38 +60,37 @@
     +desktop
       text-align: left
 
-  .title
-    font-family: 'Anton', sans-serif
-    font-weight: 400
-    color: #fff
-    font-size: 72px
-    line-height: 72px
-    letter-spacing: -1px
-    text-transform: uppercase
-    text-shadow: 2px 2px 6px #333
-    margin: 0
+    .title
+      font-family: 'Anton', sans-serif
+      font-weight: 400
+      color: #fff
+      font-size: 72px
+      line-height: 72px
+      letter-spacing: -1px
+      text-transform: uppercase
+      text-shadow: 2px 2px 6px #333
+      margin: 0
 
-    +tablet
-      font-size: 85px
-      line-height: 85px
+      +tablet
+        font-size: 85px
+        line-height: 85px
 
-  .subtitle
-    font-family: 'Great Sejagad', sans-serif
-    font-weight: 400
-    font-size: 105px
-    line-height: 60px
-    color: $primary
-    text-shadow: 1px 1px 6px #333
-    margin: 0
-    position: relative
+    .subtitle
+      font-family: 'Great Sejagad', sans-serif
+      font-weight: 400
+      font-size: 105px
+      line-height: 60px
+      text-shadow: 1px 1px 6px #333
+      margin: 0
+      position: relative
 
-    +tablet
-      font-size: 120px
-      line-height: 70px
+      +tablet
+        font-size: 120px
+        line-height: 70px
 
-  .tagline
-    font-size: 26px
-    color: #fff
-    margin: 10px 0 30px 0
-    text-shadow: 0 0 3px #999
+    .tagline
+      font-size: 26px
+      color: #fff
+      margin: 10px 0 30px 0
+      text-shadow: 0 0 3px #999
 </style>

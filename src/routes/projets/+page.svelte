@@ -139,9 +139,11 @@
     </div>
 
     <p class="has-text-centered">
-      <a href="/association" class="button">
-        Soutenir l'association
-        <span class="icon"><Icon icon="material-symbols:arrow-forward-ios" /></span>
+      <a href="/association" class="button is-primary">
+        <span>Soutenir l'association</span>
+        <span class="icon">
+          <Icon icon="material-symbols:arrow-forward-ios" />
+        </span>
       </a>
     </p>
   </div>
@@ -150,7 +152,6 @@
 <style lang="sass">
   .wrapper
     background-color: #fff
-    background-image: url("../../lib/images/bg-green-dots.jpg")
     background-size: cover
     padding: 30px 0
     min-height: 350px
@@ -204,6 +205,8 @@
             transform: scale(1.1)
 
     .card-content
+      padding: 0
+
       h2
         font-family: 'Anton', sans-serif
         text-transform: uppercase
@@ -212,12 +215,12 @@
         margin: 0
 
         a
-          color: $secondary
+          color: $primary
           text-decoration: none
           transition: color 200ms ease
 
           &:hover
-            color: $secondary-dark
+            color: $primary-dark
 
       h3
         font-size: 22px
@@ -237,12 +240,12 @@
 
       a
         &.more
-          color: $secondary
+          color: $primary
           text-decoration: none
           transition: all 200ms ease
 
           &:hover
-            color: $secondary-dark
+            color: $primary-dark
             text-decoration: underline
 
           .icon

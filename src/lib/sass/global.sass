@@ -1,13 +1,31 @@
-@import 'base/reset'
-@import 'base/fonts'
+@import 'bulma/bulma'
+@import 'fonts'
 
-@import 'elements/button'
-@import 'elements/container'
+.button
+  text-transform: uppercase
+  font-weight: bold
+  text-shadow: 0 0 3px #666
+  padding: 15px 20px
+  border-radius: 0
+  height: 3em
 
-@import 'components/breadcrumb'
-@import 'components/columns'
+.container
+  flex-grow: 1
+  margin: 0 auto
+  padding: 0 20px
+  position: relative
+  width: auto
 
-@import 'helpers/alignment'
-@import 'helpers/float'
-@import 'helpers/gap'
-@import 'helpers/spacing'
+  +tablet
+    padding: 0 30px
+
+  +desktop
+    max-width: 960px
+    padding: 0
+
+.card
+  box-shadow: none
+  border-radius: 0
+
+  .card-content, .card-image img
+    border-radius: 0
