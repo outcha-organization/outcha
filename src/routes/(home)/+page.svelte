@@ -12,5 +12,6 @@
 </svelte:head>
 
 <Hero />
+<Announcement />
 <Projects />
 <Donate />

@@ -12,12 +12,16 @@
 
 <div class="modal {active ? 'is-active' : ''}">
   <div class="modal-background" on:click={() => active = false}></div>
-  <div class="modal-content">
-    <p class="image is-3by4">
-      <a href="https://reservation.anzere.ch/05-04-2024-aventures-polaires.html" target="_blank" rel="noreferrer">
-        <img src="{aventuresPolaires}" alt="Aventures Polaires" />
-      </a>
-    </p>
+  <div class="modal-card">
+    <header class="modal-card-head px-4 py-3">
+      <h2 class="subtitle has-text-weight-semibold">Gardiens de cabane</h2>
+    </header>
+    <section class="modal-card-body has-text-centered p-3">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/nGiP-QMJmGY?si=TgLCFJ7RSu-bldPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <footer class="modal-card-foot px-4 py-3">
+      <p>Rendez-vous du 14 au 21 Septembre 2024 à la cabane du Plan Névé !!!</p>
+    </footer>
   </div>
   <button class="modal-close is-large" aria-label="close" on:click={() => active = false}></button>
 </div>
@@ -27,8 +31,8 @@
     <span class="icon">
       <Icon icon="fa6-solid:bullhorn" />
     </span>
-    <strong>Aventures Polaires :</strong>
-    Rendez-vous le 5 Avril 2024 18:30 à Anzère !!!
+    <strong>Gardiens de cabane :</strong>
+    Retrouvez-nous du 14 au 21 Septembre à la cabane du Plan Névé !!!
     (<a href="#" on:click|preventDefault={() => active = true}>En savoir plus</a>)
   </div>
 </div>
