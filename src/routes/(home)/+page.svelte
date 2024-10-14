@@ -12,6 +12,8 @@
 </svelte:head>
 
 <Hero />
-<Announcement />
+{#if new Date() <= new Date('2024-11-10')}
+  <Announcement />
+{/if}
 <Projects />
 <Donate />
